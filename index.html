@@ -1,56 +1,1559 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/logo-2.png">.
-  <title>Xenoxforge Creative Studios</title>
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing: border-box;
+  <meta name="description"
+    content="Start Your Project Today: Expertly creating websites, apps, and stunning designs for individuals, startups, and businesses. Get started now">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Software Development and Design Agency in Nigeria">
+  <meta property="og:description"
+    content="Start Your Project Today: We specialize in crafting exceptional websites, apps, and design solutions for individuals, startups, and businesses. Get started now">
+  <meta property="og:image" content="assets/atom_3.png">
+  <meta property="og:url" content="https://xenoxforge.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@xenoxforge">
+  <link rel="shortcut icon" href="assets/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/stylesheets/xenoxforge.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=supreme@800,400,500,700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>Leading Software Development & Design Agency in Nigeria</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "xenoxforge",
+      "alternateName": "xenoxforge creative studios",
+      "url": "https://xenoxforge.com",
+      "logo": "https://xenoxforge.com/assets/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/xenoxforge.studio/",
+        "https://web.facebook.com/xenoxforgecreativestudios/",
+        "https://twitter.com/xenoxforge",
+        "https://xenoxforge.com"
+      ]
     }
-    body{
-      background-color: #050505;
-      display:flex;
-      align-items: center;
-      height:100vh;
+    </script>
+  <style>
+    .atom_12 {
+      background-color: #D5FF8F;
+      width: 100%;
+      border-top: 10px solid var(--black);
+      max-height: calc(min-content - 20rem);
+      position: relative;
+    }
+
+    .cloud {
+      position: absolute;
+      z-index: -1;
+      top: -80px;
+      right: 10px;
+    }
+
+    .atom_13 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .atom_14 h2 {
+      font-family: Thunder;
+      font-size: var(--average-font);
+      margin-bottom: 3rem;
+    }
+
+    .atom_14 p {
+      font-family: var(--font);
+      font-size: 25px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .atom_15 h2 {
+      font-family: Thunder;
+      font-size: var(--average-font);
+      text-align: right;
+    }
+
+    .atom_18 h2 {
+      font-family: Thunder;
+      font-size: var(--average-font);
+    }
+
+    .atom_18 p {
+      font-weight: 500;
+      font-size: 25px;
+
+    }
+
+    .st7 {
+      text-align: center;
+    }
+
+    .atom_18 {
+      text-align: center;
+      width: 60%;
       justify-content: center;
     }
-    .least{
-      width:50%;
+
+    .atom_17 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    img{
+
+    .atom_17 {
+      position: relative;
+    }
+
+    .atom_17 img {
+      position: absolute;
+      left: 0;
+      top: -80%;
+    }
+
+    .hex {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .atom_box {
+      width: 500px;
+      height: 550px;
+      margin-right: 10px;
+      background-color: var(--black);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .atom_box h3 {
+      color: #D5FF8F;
+      font-size: 25px;
+    }
+
+    .atom_text {
+      color: var(--light);
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    .atom_16 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .atom_button {
       width: 100%;
-      height:auto;
+      height: 100px;
+      background-color: var(--white);
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .5s ease;
     }
-    .damn{
-      position:fixed;
+
+    .atom_button:hover {
+      opacity: 0.95;
+      transition: all .5s ease;
+    }
+
+    .atom_float {
+      animation: float 3s infinite;
+    }
+
+    @keyframes float {
+      0% {
+
+        transform: translatey(0px);
+      }
+
+      50% {
+        transform: translatey(-60px);
+      }
+
+      100% {
+        transform: translatey(0px);
+      }
+    }
+
+    .atom_19 {
+      position: relative;
+    }
+
+    .v2 {
+      width: 100%;
+      height: auto;
+    }
+
+    .v1 {
+      position: absolute;
+      right: 0;
+    }
+
+    .atom_collect_1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light);
+    }
+
+    .atom_collect_4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light);
+    }
+
+    .atom_collect_2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--light);
+    }
+
+    .atom_collect_3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light);
+    }
+
+    .a_row {
+      text-align: center;
+      width: 50%;
+      margin-top: 5rem;
+    }
+
+    .a_row_1 {
+      text-align: center;
+      width: 80%;
+      margin-top: 5rem;
+    }
+
+    .a_row_4 {
+      text-align: center;
+      width: 80%;
+      margin-top: 5rem;
+    }
+
+    .a_row p {
+      font-size: var(--font-size);
+
+    }
+
+    .a_row_1 h1 {
+      font-family: Thunder;
+      font-size: var(--huge-font);
+    }
+
+    .a_row_4 h1 {
+      font-family: Thunder;
+      font-size: var(--huge-font);
+    }
+
+    .a_row_1 p {
+      font-size: var(--font-size);
+
+    }
+
+    .a_row_4 p {
+      font-size: var(--font-size);
+
+    }
+
+    .a_row h1 {
+      font-family: Thunder;
+      font-size: var(--huge-font);
+    }
+
+    .atom_collect_2 .a_row {
+      width: 40%;
+      margin-top: 10rem;
+    }
+
+    .atom_collect_2 .a_row h1 {
+      font-size: var(--average-font);
+    }
+
+    .atom_collect_3 .a_row h1 {
+      font-size: var(--average-font);
+    }
+
+    .atom_20 {
+      color: #808080;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .atom_21 {
+      background-color: #FF5CA9;
+      width: 100%;
+      border-top: 10px solid var(--black);
+      position: relative;
+    }
+
+    .cloud_1 {
+      position: absolute;
+      z-index: -1;
+      top: -120px;
+      left: 10px;
+    }
+
+    .cloud_2 {
+      position: absolute;
+      z-index: -2;
+      top: -120px;
+      right: 10px;
+    }
+
+    .atom_22 {
+      display: flex;
+      align-items: center;
+
+    }
+
+    .atom_23 {
+      width: 70%;
+    }
+
+    .atom_23 h1 {
+      font-family: Thunder;
+      font-size: var(--average-font);
+    }
+
+    .atom_23 p {
+      font-size: var(--font-size);
+      width: 80%;
+      font-weight: 500;
+    }
+
+    .st1 {
+      z-index: 1;
+      position: relative;
+    }
+
+    .atom_24 {
+      /* position:absolute; */
+      margin-top: -100px;
+      z-index: 99;
+      position: sticky;
+    }
+
+    .atom_25 {
+      height: calc(100vh + 10vh);
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cloud_7 {
+      position: absolute;
+      top: 10%;
+      left: 0;
+    }
+
+    .cloud_8 {
+      position: absolute;
+      top: 30%;
+      right: 0;
+    }
+
+    .atom_14 {
+      width: 40%;
+      min-width: 400px;
+    }
+
+    .st2 {
+      width: 100%;
+    }
+
+    .st2 p {
+      font-size: var(--font-size);
+      width: 70%;
+      font-weight: 500;
+    }
+
+    .st3 {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      justify-content: flex-start;
+    }
+
+    .atom_box {
+
+      min-width: 400px;
+      max-width: 400px;
+    }
+
+    .atom_26 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+    }
+
+    .atom_26 h1 {
+      font-family: Thunder;
+      font-size: var(--huge-font);
+      color: var(--light);
+    }
+
+    .atom_26 img {
+      width: 400px;
+    }
+
+    .atom_base h2 {
+      color: #E8FFC2;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .atom_base p {
+      font-size: var(--font-size);
+      font-weight: 500;
+      width: 70%;
+      color: var(--light);
+      margin-bottom: 5rem;
+    }
+
+    body {
+      background: url("assets/layer.svg");
+    }
+
+    .atom_27,
+    .atom_28 {
+      color: var(--light);
+      height: 200px;
+
+    }
+
+    footer {
+      margin-top: 20rem !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: self-end;
+    }
+
+    .atom_27 h1,
+    .atom_28 h1 {
+      font-weight: 900;
+    }
+
+    .atom_27 p,
+    .atom_28 p {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .atom_28 img {
+      width: 30px;
+      height: auto;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .atom_30 {
+      height: 200px;
+    }
+
+    .atom_29 img {
+      width: 300px;
+      height: auto;
+    }
+
+    .atom_30 img {
+      width: 90px;
+      height: auto;
+    }
+
+    .atom_link:hover {
+      text-decoration: underline;
+      color: #FF5CA9;
+      cursor: pointer;
+    }
+
+    .atom_boom {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      /* display: none; */
+      z-index: 9999;
+    }
+
+    .vvv {
+      justify-content: flex-end !important;
+    }
+
+    .atom_starred {
+
+      display: none;
+    }
+
+    @media screen and (max-width: 1500px) {
+      .atom_13 {
+        max-width: 99%;
+      }
+
+      .atom_14 {
+        width: 30% !important;
+        min-width: auto !important;
+      }
+
+      .atom_15 {
+        width: 60%;
+      }
+
+      .vvv {
+        justify-content: flex-start !important;
+      }
+
+      .st3 {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+      }
+
+      .atom_box {
+        scroll-snap-align: start;
+      }
+
+    }
+
+    @media screen and (max-width: 1300px) {
+
+      :root {
+        --font-size: 18px !important;
+        --huge-font: 90px !important;
+        --average-font: 60px !important;
+      }
+
+      .cloud_1 img {
+        width: 200px;
+      }
+
+      .cloud_2 img {
+        width: 200px;
+      }
+
+      .cloud_2 {
+        position: absolute;
+        z-index: -2;
+        top: -80px;
+        right: 10px;
+      }
+
+      .cloud_1 {
+        position: absolute;
+        z-index: -2;
+        top: -80px;
+        left: 10px;
+      }
+
+      .cloud {
+        top: -60px;
+      }
+
+      .cloud img {
+        width: 200px;
+      }
+
+      .atom_21 {
+        margin-top: 5rem;
+      }
+
+      .atom_22 img {
+        width: 200px;
+      }
+
+      .atom_20 p {
+        font-size: 14px;
+      }
+
+      .atom_26 img {
+        width: 200px;
+      }
+
+      .cloud_7 img,
+      .cloud_8 img {
+        width: 200px !important;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+
+      :root {
+        --font-size: 18px !important;
+        --huge-font: 90px !important;
+        --average-font: 60px !important;
+      }
+
+      .atom_17 img {
+        position: absolute;
+        left: 0;
+        top: -80%;
+        width: 200px;
+      }
+
+      @keyframes float {
+        0% {
+
+          transform: translatey(0px);
+        }
+
+        50% {
+          transform: translatey(-30px);
+        }
+
+        100% {
+          transform: translatey(0px);
+        }
+      }
+
+
+      .v1 {
+        width: 200px;
+      }
+
+    }
+
+
+
+    @media screen and (max-width: 1200px) {
+      .atom_discover {
+        height: 60px;
+      }
+
+      .atom_12 {
+        margin-top: 0rem !important;
+      }
+
+      :root {
+        --font-size: 18px !important;
+        --huge-font: 90px !important;
+        --average-font: 50px !important;
+      }
+    }
+
+    .st2 {
+      width: 100% !important;
+    }
+
+    .bnm {
+      display: none;
+    }
+
+    @media screen and (max-width:1000px) {
+      :root {
+        --font-size: 18px !important;
+        --huge-font: 60px !important;
+        --average-font: 50px !important;
+      }
+
+      .atom_25 {
+        height: 50vh !important;
+      }
+
+      .cloud_7 img {
+        width: 150px !important;
+      }
+
+      .cloud_8 img {
+        width: 150px !important;
+      }
+
+      .atom_13 {
+        flex-direction: column-reverse;
+      }
+
+      .atom_15 h2 {
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+
+      .atom_15 {
+        width: 99%;
+        margin-bottom: 2rem;
+      }
+
+      .atom_box {
+        height: 300px;
+        max-width: 300px !important;
+        min-width: 300px !important;
+      }
+
+      .fgg {
+        width: 99% !important;
+      }
+
+      .fgg h2 {
+        margin-bottom: 1rem !important;
+      }
+
+      .atom_text {
+        font-size: 18px;
+        margin-top: 1rem;
+      }
+
+      .atom_button {
+        height: 60px;
+        font-size: var(--font-size);
+      }
+
+      .atom_box h3 {
+        font-size: var(--font-size);
+      }
+
+      .atom_17 img {
+        display: none;
+      }
+
+      .atom_17 {
+        justify-content: flex-start;
+      }
+
+      .atom_14 p {
+        font-size: var(--font-size);
+      }
+
+      .atom_18 p {
+        font-size: var(--font-size);
+        text-align: left;
+      }
+
+      .atom_18 {
+        text-align: left !important;
+        width: 80%;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: self-start;
+      }
+
+      .atom_27,
+      .atom_28,
+      .atom_29,
+      .atom_30 {
+        margin-bottom: 5rem;
+        height: auto !important;
+      }
+
+      .atom_3 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .atom_5 {
+        margin-left: 0px;
+        margin-top: 2rem;
+        width: 80%;
+      }
+
+      .atom_8 {
+        height: 250px;
+      }
+
+      .atom_11 img {
+        width: 200px !important;
+      }
+
+      .st6 {
+        margin-top: 2rem !important;
+      }
+
+      .st6 .cloud_1 {
+        display: none;
+      }
+
+      .cloud {
+        display: none;
+      }
+    }
+
+
+    @media screen and (max-width:800px) {
+      .atom_26 {
+        margin-top: 5rem !important;
+        margin-bottom: 2rem !important;
+      }
+
+      .atom_4 {
+        width: 100%;
+      }
+
+      .cloud_7 img {
+        width: 80px !important;
+      }
+
+      .atom_27,
+      .atom_28,
+      .atom_29,
+      .atom_30 {
+        margin-bottom: 2rem;
+        height: auto !important;
+      }
+
+      footer {
+        margin-top: 10rem !important;
+      }
+
+      .cloud_8 img {
+        width: 80px !important;
+      }
+
+      .atom_5 {
+        margin-left: 0px;
+        margin-top: 2rem;
+        width: 100%;
+      }
+
+      .atom_8 {
+        height: 200px;
+      }
+
+      .atom_collect_1 {
+        justify-content: flex-start;
+      }
+
+      .a_row {
+        text-align: left;
+        margin-top: 2rem !important;
+      }
+
+      .atom_collect_2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .atom_collect_3 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .a_row {
+        width: 70% !important;
+      }
+
+      .cloud_2 {
+        display: none;
+      }
+
+      .atom_22 img {
+        display: none;
+      }
+
+      .atom_23 {
+        width: 100%;
+      }
+
+      .atom_23 p {
+        width: 100%;
+      }
+
+      .atom_base p {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:700px) {
+      .atom_2 div:nth-child(1) {
+        display: none;
+      }
+
+      .atom_6 {
+        display: none;
+      }
+
+      .atom_26 img {
+        display: none;
+      }
+
+      .bnm {
+        text-align: center;
+        margin-top: 2rem;
+        display: inline;
+      }
+
+      .a_row {
+        width: 100% !important;
+      }
+
+      .atom_11 {
+        display: none;
+      }
+
+      .atom_row div {
+        width: 100% !important;
+      }
+
+      .atom_11 img {
+        width: 80px !important;
+      }
+
+      .atom_row {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width:500px) {
+      :root {
+        --font-size: 16px !important;
+        --huge-font: 60px !important;
+        --average-font: 50px !important;
+      }
+
+      .atom_20 p {
+        font-size: 11px;
+      }
+
+      .atom_3 {
+        margin-top: 3rem;
+      }
+
+      .atom_26 {
+        margin-top: 3rem !important;
+        margin-bottom: 2rem !important;
+      }
+
+      .atom_1 img {
+        width: 100px !important;
+      }
+
+      .atom_8 {
+        height: 150px;
+      }
+
+      .atom_24 {
+        margin-top: -50px;
+      }
+
+      .atom_8 div:nth-child(1) {
+        display: none;
+
+      }
+
+      .atom_8 div {
+        width: 50%;
+      }
+
+      .st2 p {
+        width: 100%;
+      }
+
+      .atom_18 {
+        width: 100%;
+      }
+
+      .atom_base h2 {
+        font-size: var(--font-size);
+      }
+
+      .atom_base p {
+        margin-bottom: 2rem;
+      }
+
+      .atom_29 img {
+        width: 200px;
+      }
+
+    }
+
+    @media screen and (max-width:600px) {
+      .atom_starred {
+        height: 60px;
+        background-color: #FF645C;
+        color: var(--black);
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+      }
+
+      .atom_row {
+        margin-top: 2rem !important;
+      }
+
+      .atom_7 img {
+        display: none;
+      }
+
+      .atom_starred_1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .atom_starred_1 div {
+        margin-right: 2rem;
+        font-weight: 900;
+      }
+
+
+
+      .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+
+      .marquee-content {
+        display: flex;
+        animation: marquee 10s linear infinite;
+
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .st2 h2 {
+        margin-bottom: 0 !important;
+      }
+
+      .st2 p {
+        margin-bottom: 0 !important;
+      }
+
+    }
+
+    .preloader-wrap {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: var(--black);
+      z-index: 99999;
+    }
+
+    .percentage {
+      z-index: 100;
+      border: 1px solid #ccc;
+      text-align: center;
+      color: #fff;
+      line-height: 30px;
+      font-size: 15px;
+    }
+
+    .loader,
+    .percentage {
+      height: 5px;
+      max-width: 200px;
+      border: none;
+      border-radius: 20px;
+      font-weight: 300;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .loader:after,
+    .percentage:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .trackbar {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      overflow: hidden;
+      position: relative;
+      opacity: 0.99;
+    }
+
+    .loadbar {
+      width: 0%;
+      height: 100%;
+      background-color: var(--n);
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: flicker 5s infinite;
+      overflow: hidden;
+    }
+
+    .glow {
+      width: 0%;
+      height: 0%;
+      border-radius: 20px;
+      box-shadow: 0px 0px 60px 10px var(--b);
+      position: absolute;
+      bottom: -5px;
+      display: none;
+      animation: animation 5s infinite;
+    }
+
+    @keyframes animation {
+      10% {
+        opacity: 0.9;
+      }
+
+      30% {
+        opacity: 0.86;
+      }
+
+      60% {
+        opacity: 0.8;
+      }
+
+      80% {
+        opacity: 0.75;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: unset !important;
+    }
+    .whatsapp{
+      position: fixed;
       bottom:10px;
-      left:0;
-      right:0;
-      width:20rem;
-      margin:0 auto;
-    }
-    .face{
-      position:fixed;
-      left:10px;
-      top:10px;
-      width:70px;
-      height:70px;
+      right:10px;
+      width:80px;
     }
   </style>
 </head>
+
 <body>
-  <img src="assets/logo_primary.png" class="face" alt="">
-    <div class="least">
-       <img src="assets/xenoxforge.png" alt="">
+  <div class="preloader-wrap">
+    <div style="display: none;" class="percentage" id="precent"></div>
+    <div class="loader">
+      <div class="trackbar">
+        <div class="loadbar"></div>
+      </div>
+      <div class="glow"></div>
     </div>
-    <div>
-      <div class="damn">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3jjujdWJ72nww5eGnfs2E7?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  <!-- <div class="atom_boom">
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/1eSvZHooxR3QXnNGsUTbHD?utm_source=generator&theme=0" width="100%"
+      height="152" frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div> -->
+  <header>
+    <div class="atom_1">
+      <img src="assets/forge_long.svg" alt="">
+    </div>
+    <div class="atom_2 ">
+      <div class="animate__animated animate__fadeIn animate__delay-1s">Building Fast for Businesses</div>
+     
+        <div class="atom_link"> <a href='kickstart/'>CONTACT SALES</a></div>
+   
+    </div>
+  </header>
+
+  <div class="atom_3 container">
+    <div class="atom_4">
+      <!-- <h1>THE</h1>
+      <h1><span>B</span><span>R</span><span>A</span><span>N</span><span>D</span></h1>
+      <h1>WORKSHOP</h1> -->
+      <img class="animate__animated animate__fadeIn" src="assets/Group 44.svg" alt="">
+    </div>
+    <div class="atom_5 animate__animated animate__fadeIn">
+      <p><span>Xenoxforge</span> is a leading software development, design and creative media company in Nigeria. We
+        help businesses build
+        experiences that work.</p>
+      <p class="bnm"> <span class="atom_9">STARTUPS .
+          BUSINESSES . INDIVIDUALS</span></p>
+      <div id="atom_scroll" class="atom_discover">
+        DISCOVER
       </div>
     </div>
+  </div>
+
+  <div class="atom_6 container">
+    <p>Building apps, websites and content experiences that actually <br> work for <span class="atom_9">STARTUPS .
+        BUSINESSES . INDIVIDUALS</span></p>
+  </div>
+  <div class="atom_7" id="atom_init">
+    <div class="atom_starred">
+      <div class="marquee-container">
+        <div class="marquee-content  atom_starred_1">
+          <div>WIREFRAMES</div>
+          <div>DESIGN SYSTEMS</div>
+          <div>WEBSITES</div>
+          <div>SAAS</div>
+          <div>EMAIL DESIGNS</div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/Group 41.svg" alt="">
+  </div>
+  <div class="container"></div>
+  <div class="atom_8">
+    <div>
+      <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_5.png" alt="">
+    </div>
+    <div>
+      <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_3.png" alt="">
+    </div>
+    <div>
+      <img class="atom_img lazy-load" src="assets/Group 49.png" data-src="assets/atom_4.png" alt="">
+    </div>
+  </div>
+  <div class="container atom_row">
+    <div class="atom_10">
+      <h1>LEADING WITH
+        FLEXIBILITY</h1>
+      <p>Pay for what you need or commit to make unlimited requests from our list of services through our subscriptions.
+      </p>
+    </div>
+    <div class="atom_11 hex">
+      <img src="assets/$$.svg" alt="">
+    </div>
+  </div>
+  <div class="container atom_row">
+    <div class="atom_11 hex">
+      <img src="assets/__.svg" alt="">
+    </div>
+    <div class="atom_10">
+      <h1>MODERN TECH & TOOLING</h1>
+      <p>Unless you specify, our team work with the best software and technologies available on the market to keep your
+        designs and projects
+        unbeatable.</p>
+    </div>
+  </div>
+  <div class="container atom_row">
+    <div class="atom_10">
+      <h1>FAST <br>
+        DEPLOYMENT</h1>
+      <p>We work fast. Very fast.
+        <br><br>
+        Expect to get your projects started under 24 hours, and first sets of your requests done in
+        1-3 days.
+      </p>
+    </div>
+    <div class="atom_11 hex">
+      <img src="assets/hash.svg" alt="">
+    </div>
+  </div>
+
+  <div class="atom_12">
+    <div class="cloud">
+      <img src="assets/cloud.svg" alt="">
+    </div>
+    <div class="container atom_13">
+      <div class="atom_14 fgg">
+        <h2>REQUEST FOR</h2>
+        <div>
+          <p>Websites</p>
+          <p>Mobile apps</p>
+          <p>Email designs</p>
+          <p>Wireframes</p>
+          <p>SAAS</p>
+          <p>Design systems</p>
+          <p>Illustrations</p>
+        </div>
+      </div>
+      <div class="atom_15">
+        <h2>WE'VE CREATED THE BEST OF WORKFLOWS</h2>
+        <div class="atom_16 st3 vvv">
+          <div class="atom_box ">
+            <h3>Recommended for small businesses</h3>
+            <div class="atom_text">
+              Pay per project
+            </div>
+            <a target="_blank" href="kickstart/">
+              <div class="atom_button">Start project</div>
+            </a>
+          </div>
+          <div class="atom_box ">
+            <h3>Recommended for big businesses</h3>
+            <div class="atom_text">
+              Subscribe to our project plans for unlimited projects and requests.
+            </div>
+            <a target="_blank" href="pricing/">
+              <div class="atom_button">Select a plan</div>
+            </a>
+          </div>
+          <div class="atom_box st7">
+            <div class="atom_text">
+              Book a call
+            </div>
+            <a href="https://calendly.com/xenoxforge/20min" target="_blank">
+              <div class="atom_button">Schedule</div>
+            </a>
+            <div class="atom_text">
+              Send us a message
+            </div>
+            <a target="_blank" href="mailto:xenoxforge@gmail.com">
+              <div class="atom_button">Message</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container atom_17">
+      <img class="atom_float" src="assets/cloud_1.svg" alt="">
+      <div class="atom_18">
+        <h2>BRAND BOARD</h2>
+        <p>You get a request board. All your business needs to do is add requests to your project board.
+        </p>
+      </div>
+    </div>
+    <div class="atom_19">
+      <img class="v1 atom_float" src="assets/cloud_3.png" alt="">
+      <div class="v3">
+        <img class="v2" src="assets/big_brand.png" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="atom_collect_1">
+      <div class="a_row hex">
+        <h1>PERKS YOU GET</h1>
+        <p>Your projects become so much a priority you get them exactly and more than what you could want.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="atom_collect_2">
+      <div class="a_row hex">
+        <h1>ORIGINAL</h1>
+        <p>Your projects are built entirely for and with your business in mind. We don’t do cookie cutter and cliché
+          designs.</p>
+      </div>
+      <div class="a_row hex">
+        <h1>REVISIONS</h1>
+        <p>Your projects are never done until you’re a 100% satisfied.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="atom_collect_3">
+      <div class="a_row hex">
+        <h1>THE FREE STUFF</h1>
+        <p>You are able to get a free domain name for your websites, and up to 6 months free hosting. All taken care of
+          by us.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container atom_20">
+    <p>Terms and conditions apply &nbsp; &nbsp; SAAS projects excluded.</p>
+  </div>
+  <div class="atom_21">
+    <div class="cloud_1">
+      <img src="assets/cloud_5.svg" alt="">
+    </div>
+    <div class="cloud_2">
+      <img src="assets/cloud_4.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="atom_22">
+        <div class="atom_23">
+          <h1>OUR <br> RECENT WORKS</h1>
+          <p>Recent projects we’ve worked on. From research to prototyping, straight to design and development. We keep
+            projects on a fast track.</p>
+        </div>
+        <img class="atom_float" src="assets/cloud_6.svg" alt="">
+      </div>
+    </div>
+    <div class="atom_8 st1">
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_3.png" alt="">
+      </div>
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_5.png" alt="">
+      </div>
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 49.png" data-src="assets/atom_4.png" alt="">
+      </div>
+    </div>
+    <div class="atom_8 st1">
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_2.png" alt="">
+      </div>
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_6.png" alt="">
+      </div>
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_1.png" alt="">
+      </div>
+    </div>
+    <div class="atom_24">
+      <div class="v3">
+        <img class="v2" src="assets/forge.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="atom_25">
+    <div class="cloud_7 atom_float">
+      <img src="assets/cloud_7.svg" alt="">
+    </div>
+    <div class="cloud_8 atom_float">
+      <img src="assets/cloud_8.svg" alt="">
+    </div>
+    <div class="atom_collect_4">
+      <div class="a_row_4 hex">
+        <h1>NEED A GUARANTEE?</h1>
+        <p>We got you! you get a full revision if you do not like the work done. We’ve taken your business risk to an
+          absolute 0.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="atom_12 st6">
+    <div class="cloud_1">
+      <img src="assets/cloud_5.svg" alt="">
+    </div>
+    <div class="cloud">
+      <img src="assets/cloud.svg" alt="">
+    </div>
+    <div class="container atom_13">
+      <div class="atom_14 st2">
+        <h2>PS. WE WORK WITH <br> TEAMS.</h2>
+        <p>Got a design team but not a development team? Or a development team but not a design team?</p>
+      </div>
+
+    </div>
+    <div class="atom_16 st3 container">
+      <div class="atom_box ">
+        <h3>Recommended for small businesses</h3>
+        <div class="atom_text">
+          Pay per project
+        </div>
+        <a target="_blank" href="kickstart/">
+          <div class="atom_button">Start project</div>
+        </a>
+      </div>
+
+      <div class="atom_box ">
+        <h3>Recommended for big businesses</h3>
+        <div class="atom_text">
+          Subscribe to our project plans for unlimited projects and requests.
+        </div>
+        <a target="_blank" href="pricing/">
+          <div class="atom_button">Select a plan</div>
+        </a>
+      </div>
+      <div class="atom_box st7">
+        <div class="atom_text">
+          Book a call
+        </div>
+        <a href="https://calendly.com/xenoxforge/20min" target="_blank">
+          <div class="atom_button">Schedule</div>
+        </a>
+        <div class="atom_text">
+          Send us a message
+        </div>
+        <a target="_blank" href="mailto:xenoxforge@gmail.com">
+          <div class="atom_button">Message</div>
+        </a>
+      </div>
+    </div>
+    <div class="atom_19">
+      <div class="v3">
+        <img class="v2" src="assets/teams.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="atom_26">
+      <h1>FREQUENTLY <br> ASKED QUESTIONS</h1>
+      <img class="atom_float" src="assets/cloud_9.svg" alt="">
+    </div>
+    <div class="atom_base">
+      <h2>Why do you have a subscription based service?</h2>
+      <p>One word - To save you a ton of money.
+        <br>
+        The cost of hiring an agency like ours or a full time senior-level developer/designer goes up to thousands of
+        dollars. With our subscription, you only get to pay for as long as you’d require our service, and make as many
+        request as you want.
+        <br>
+        Not to mention you can pause your subscription and continue whenever you want.
+        There couldn’t be a better deal.
+      </p>
+    </div>
+    <div class="atom_base">
+      <h2>Whats the difference between regular requests and your subscription.</h2>
+      <p>If you see your business needing our different services from time to time E.g You require a website from us,
+        then afterwards will be needing graphic illustrations for your website and social accounts for your posts every
+        week. If that’s you, the subscription service would be suitable for you.
+        <br>
+        While if you just require a job done, then a regular project commitment is perfect.
+      </p>
+    </div>
+    <div class="atom_base">
+      <h2>How soon will my projects be started?</h2>
+      <p>You can expect your project to be started under 24 hours just after payment, and first turnout of requests on
+        average done in 1-3 days.</p>
+    </div>
+    <div class="atom_base">
+      <h2>What if I’m not satisfied with the project</h2>
+      <p>We revise your project until you are satisfied with it. Nothing less.</p>
+    </div>
+  </div>
+  <footer class="container">
+    <div class="atom_27">
+      <h3>OUR PRODUCTION</h3>
+      <br>
+      <p class="atom_link">DESIGN SERIES</p>
+      <a href="who we are/"><p class="atom_link">WHO WE ARE</p></a>
+    </div>
+    <div class="atom_28">
+      <h3>REPUBLIC OF XENOXFORGE</h3>
+      <br>
+      <div class="st9">
+        <a href="https://dribbble.com/xenoxforge" target="_blank"><img src="assets/dribbble.svg" alt=""></a>
+        <a href="https://facebook.com/xenoxforgecreativestudios" target="_blank"><img src="assets/facebook.svg"
+            alt=""></a>
+        <a href="https://www.instagram.com/xenoxforge.studio/" target="_blank"><img src="assets/instagram.svg"
+            alt=""></a>
+        <a href="https://twitter.com/xenoxforge" target="_blank"><img src="assets/twitter.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="atom_29">
+      <img src="assets/Group 39.svg" alt="">
+    </div>
+    <!-- <div class="atom_30">
+      <img src="assets/logo_ideal.png" alt="">
+    </div> -->
+  </footer>
 </body>
+
+<script src="assets/js/xenoxforge.js"></script>
+
 </html>
