@@ -1062,7 +1062,7 @@ if(!isset($_SESSION['email'])){
         .loader,
         .percentage {
             height: 5px;
-            max-width: 200px;
+            max-width: 100px;
             border: none;
             border-radius: 20px;
             font-weight: 300;
@@ -1334,7 +1334,6 @@ if(!isset($_SESSION['email'])){
         <div class="atom_27">
             <h3>OUR PRODUCTION</h3>
             <br>
-            <p class="atom_link">DESIGN SERIES</p>
             <a href='../who we are'><p class="atom_link">WHO WE ARE</p></a>
         </div>
         <div class="atom_28">
@@ -1346,7 +1345,7 @@ if(!isset($_SESSION['email'])){
                         src="../assets/facebook.svg" alt=""></a>
                 <a href="https://www.instagram.com/xenoxforge.studio/" target="_blank"><img
                         src="../assets/instagram.svg" alt=""></a>
-                <a href="https://twitter.com/xenoxforge" target="_blank"><img src="../assets/twitter.svg" alt=""></a>
+                <a href="https://twitter.com/xenoxforge" target="_blank"><img src="../assets/x.svg" alt=""></a>
             </div>
         </div>
         <div class="atom_29">

@@ -34,6 +34,12 @@
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: "Kablammo";
+    src: url('https://storage.googleapis.com/atoms-sandbox.google.com.a.appspot.com/Kablammo%5BMORF%5D.woff2') format('woff2'),
+        url('https://storage.googleapis.com/atoms-sandbox.google.com.a.appspot.com/Kablammo%5BMORF%5D.ttf') format('truetype');
+}
+
 
 :root {
     --black: #050505;
@@ -44,7 +50,7 @@
     --a: #E8FFC2;
     --n: #FFC5C2;
     --d: #DFFFD6;
-    --font: 'Supreme', sans-serif;
+    --font: 'Author', sans-serif;
     --font-size: 22px;
     --huge-font: 128px;
     --average-font: 90px;
@@ -66,6 +72,17 @@ body {
     font-family: var(--font);
 }
 
+@keyframes morph {
+    50% {
+      font-variation-settings: "MORF" 60;
+    }
+  }
+
+.pointer{
+    font-family: "Kablammo";
+    font-variation-settings: "MORF" 0;
+    animation: morph 10s linear infinite;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -215,7 +232,7 @@ header {
     color: var(--light);
     font-weight: 500;
     font-size: var(--font-size);
-    
+
 
 }
 
@@ -243,31 +260,37 @@ header {
     object-fit: cover;
 }
 
-.atom_9{
+.atom_9 {
     font-weight: 800;
 }
-.atom_row{
+
+.atom_row {
     display: flex;
     justify-content: space-between;
-    
+
 }
+
 .atom_10 {
-    color:var(--light);
+    color: var(--light);
     font-size: var(--font-size);
 }
-.atom_row div{
+
+.atom_row div {
     width: 50%;
 
 }
-.atom_10 h1{
+
+.atom_10 h1 {
     font-size: var(--huge-font);
     font-family: Thunder;
 }
+
 .atom_11 {
     display: flex;
     justify-content: center;
 }
-.atom_11 img{
+
+.atom_11 img {
     width: 300px;
     height: auto;
 }
@@ -276,12 +299,12 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-  }
-
-.atom_4 img{
-    --animate-duration: 3s;
 }
-.atom_5{
+
+.atom_4 img {
     --animate-duration: 3s;
 }
 
+.atom_5 {
+    --animate-duration: 3s;
+}

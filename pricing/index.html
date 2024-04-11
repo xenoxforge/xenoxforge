@@ -4,13 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Leading Software Development & Design Agency</title>
+    <meta name="description"
+        content="Start Your Project Today: Expertly creating websites, apps, and stunning designs for individuals, startups, and businesses. Get started now">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Software Development and Design Agency">
+    <meta property="og:description"
+        content="Start Your Project Today: We specialize in crafting exceptional websites, apps, and design solutions for individuals, startups, and businesses. Get started now">
+    <meta property="og:image" content="https://xenoxforge.com/assets/logo.png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:url" content="https://xenoxforge.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@xenoxforge">
+    <meta name="twitter:image" content="https://xenoxforge.com/assets/logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../assets/stylesheets/xenoxforge.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=supreme@800,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=author@501,400,500,200,2,301,601,600,1,300,700,201,701,401&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <title>PRICING</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Corporation",
+            "name": "xenoxforge Creative Studios",
+            "alternateName": "xenoxforge creative studios",
+            "url": "https://xenoxforge.com",
+            "logo": "https://xenoxforge.com/assets/logo.png",
+            "sameAs": [
+                "https://www.instagram.com/xenoxforge.studio/",
+                "https://web.facebook.com/xenoxforgecreativestudios/",
+                "https://twitter.com/xenoxforge",
+                "https://xenoxforge.com"
+            ]
+        }
+    </script>
     <style>
         .atom_12 {
             background-color: #D5FF8F;
@@ -106,7 +138,7 @@
         }
 
         .atom_box h3 {
-            color: var(--light);
+            color: #D5FF8F;
             font-size: 25px;
         }
 
@@ -124,8 +156,8 @@
         .atom_button {
             width: 100%;
             height: 100px;
-            background-color: var(--white);
-            color: var(--black);
+            background-color: black;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -133,7 +165,7 @@
             margin-top: 1.5rem;
             font-size: 25px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 600;
             cursor: pointer;
             transition: all .5s ease;
         }
@@ -405,7 +437,8 @@
         }
 
         body {
-            background: url("../assets/layer.svg");
+            background: url("../assets/layer_1.svg");
+
         }
 
         .atom_27,
@@ -456,7 +489,7 @@
 
         .atom_link:hover {
             text-decoration: underline;
-            color: #FF5CA9;
+            color: #D5FF8F;
             cursor: pointer;
         }
 
@@ -912,14 +945,14 @@
             }
 
             .atom_8 {
-                height: 150px;
+                height: 200px;
             }
 
             .atom_24 {
                 margin-top: -50px;
             }
 
-            .atom_8 div:nth-child(1) {
+            .atom_8 div:nth-child(2) {
                 display: none;
 
             }
@@ -950,20 +983,7 @@
 
         }
 
-        .l4 {
-            font-size: 25px !important;
-        }
-
         @media screen and (max-width:600px) {
-            .p_1 {
-                margin-top: 1rem;
-                margin-left: 20px;
-            }
-
-            .p_1 img {
-                display: none !important;
-            }
-
             .atom_starred {
                 height: 60px;
                 background-color: #FF645C;
@@ -1035,8 +1055,8 @@
             position: fixed;
             top: 0;
             bottom: 0;
-            background-color: var(--black);
-            z-index: 99999;
+            background: black;
+            z-index: 99999 !important;
         }
 
         .percentage {
@@ -1051,7 +1071,7 @@
         .loader,
         .percentage {
             height: 5px;
-            max-width: 200px;
+            max-width: 50px;
             border: none;
             border-radius: 20px;
             font-weight: 300;
@@ -1089,7 +1109,7 @@
         .loadbar {
             width: 0%;
             height: 100%;
-            background-color: var(--n);
+            background-color: #fff;
             position: absolute;
             top: 0;
             left: 0;
@@ -1126,8 +1146,209 @@
             }
         }
 
-        body {
+        a {
+            text-decoration: none;
+            color: unset !important;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 80px;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .logos {
+            overflow: hidden;
+            padding: 60px 0;
+            background: white;
+            white-space: nowrap;
+
+            position: sticky;
+        }
+
+        .logos:before,
+        .logos:after {
+            position: absolute;
+            top: 0;
+            width: 250px;
             height: 100%;
+            content: "";
+            z-index: 2;
+        }
+
+        .logos:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+        }
+
+        .logos:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+        }
+
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+
+        .logos-slide {
+            display: inline-block;
+            animation: 30s slide infinite linear;
+        }
+
+        .logos-slide img {
+            height: 50px;
+            margin: 0 40px;
+        }
+
+        @media screen and (max-width:700px) {
+            .logos {
+                background: white;
+                padding: 30px 0;
+            }
+
+            .logos:before {
+                left: 0;
+                background: none;
+            }
+
+            .logos-slide img {
+                height: 20px;
+                margin: 0 20px;
+            }
+
+            .logos:after {
+                right: 0;
+                background: none;
+            }
+
+            .lean {
+                text-align: center;
+            }
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .bo {
+            border-radius: 100%;
+            width: 70px;
+            background-color: black;
+            backdrop-filter: blur(10px);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            position: fixed;
+            top: 5px;
+            z-index: 999;
+            left: 10px;
+        }
+
+        .lk {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1.5% 2%;
+        }
+
+        .mk {
+            width: 50px !important;
+        }
+
+        .desmond {
+            border-radius: 100px;
+            background-color: #D5FF8F;
+            width: 220px;
+            height: 60px;
+            position: fixed;
+            top: 5px;
+            display: none;
+            align-items: center;
+            z-index: 999999 !important;
+            right: 10px;
+            padding: 20px;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .po {
+            display: flex;
+        }
+
+        .atom_img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* .desmond{
+      transition: background-color 1s ease;
+    } */
+        .every_thing_black {
+            background-color: #fff;
+            width: 100%;
+            z-index: 9999 !important;
+            padding: 15px;
+            position: relative;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .atom_4 img {
+            transform: rotate(3deg);
+        }
+
+        .shade {
+            position: fixed;
+            bottom: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
+            width: 100%;
+            z-index: 99;
+        }
+
+        .atom_15 {
+            z-index: 999;
+        }
+
+        .up {
+            z-index: 99 !important;
+            position: relative;
+        }
+
+        .atom_discover {
+            width: 100%;
+            height: 70px;
+            background-color: #D5FF8F;
+            color: var(--black);
+            font: var(--font);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin-top: 1.5rem;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+
+        .atom_5 p span {
+            font-weight: 500;
         }
 
         .p_1 {
@@ -1145,58 +1366,104 @@
 
         }
 
-        .l2 .atom_box {
-            background-color: transparent;
-            height: min-content !important;
+        .atom_box {
+            background-color: #D5FF8F;
+            color: black !important;
+            min-height: 30rem !important;
+            height: max-content;
         }
 
         .l2 {
             justify-content: flex-start !important;
+
         }
 
         .atom_text {
             margin-top: 1rem;
+            color: black !important;
         }
 
         .l9 {
             font-size: 16px;
             margin-top: 10px;
-            color: #BF8FFF;
+
         }
 
         a {
             color: unset;
             text-decoration: none;
         }
+
+        .l4 {
+            font-size: 2rem !important;
+            color: black !important;
+
+        }
+
+        .container h1 {
+            font-size: var(--average-font);
+            color: var(--light);
+        }
+
+        @media screen and (max-width:800px) {
+            .container {
+                margin-top: 4rem;
+            }
+        }
+
+        .circle {
+            display: none;
+        }
+
+        body {
+            cursor: none !important;
+        }
+
+        @media screen and (min-width:700px) {
+            .circle {
+                --circle-size: 40px;
+                position: fixed;
+                height: 20px;
+                display: block;
+                width: 20px;
+                border: 1px solid white;
+                border-radius: 100%;
+                top: calc(20px / 2 * -1);
+                left: calc(20px / 2 * -1);
+                z-index: 999999999;
+                pointer-events: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="preloader-wrap">
-        <div style="display: none;" class="percentage" id="precent"></div>
-        <div class="loader">
-            <div class="trackbar">
-                <div class="loadbar"></div>
-            </div>
-            <div class="glow"></div>
+    <div class="circle"></div>
+    <div class="shade"></div>
+    <a target="_blank" href="mailto:studio@xenoxforge.com">
+        <div class='desmond' id="desmond">
+            TWO OPEN SLOTS <span class="pointer" style="font-size: 2rem;margin-left:10px">👀</span>
         </div>
-    </div>
+    </a>
     <header>
-        <div class="p_1 atom_1">
-            <div class="p_2">
-                <h1>SUBSCRIPTION</h1>
-                <p>Pause or cancel anytime</p>
-            </div>
-              <a href='../'> <div class="atom_1">
-            <img src="../assets/forge_long.svg" alt="">
-        </div></a>
+        <div class="atom_1" id="navbar" style="padding:10px;z-index: 999;">
+            <a href="../"><img class="mk" style="width:60px !important;height:auto" src="../assets/logo_ideal.png"
+                    alt=""></a>
         </div>
+        <div class="atom_2 " style="padding:10px">
+            <div class="animate__animated animate__fadeIn animate__delay-1s cos">THE CREATORS OS</div>
 
+            <div class="atom_link up"> <a target="_blank" href="mailto:studio@xenoxforge.com">STUDIO : KICKSTART</a>
+            </div>
+
+        </div>
     </header>
     <div class="container">
-        <div class="atom_16 st3 vvv l2">
+        <h1 class="up">Slots</h1>
+        <br>
+        <div class="atom_16 st3 vvv l2 up">
             <div class="atom_box ">
-                <h3 class="l4">$2,000 / month</h3>
+                <h3 class="l4">$25,000 / month</h3>
                 <div class="atom_text">
                     <p>Websites</p>
                     <p>Mobile apps</p>
@@ -1204,11 +1471,13 @@
                     <p>Wireframes</p>
                     <p>SAAS</p>
                     <p>Illustrations</p>
+                    <p>Motion design</p>
+                    <p>2d & 3d graphics</p>
+                    <p>Design systems</p>
                     <br>
                     <p class="l9">One request at a time</p>
                     <p class="l9">Access to premium image and video assets</p>
                     <p class="l9">Free 3 months hosting for websites</p>
-                    <p class="l9">Free domain name for websites</p>
                 </div>
                 <a href="https://flutterwave.com/pay/xenoxforge_silver">
                     <div class="atom_button">Start project</div>
@@ -1217,7 +1486,7 @@
 
 
             <div class="atom_box ">
-                <h3 class="l4">$3,000 / month</h3>
+                <h3 class="l4">$45,000 / month</h3>
                 <div class="atom_text">
                     <p>Websites</p>
                     <p>Mobile apps</p>
@@ -1225,17 +1494,20 @@
                     <p>Wireframes</p>
                     <p>SAAS</p>
                     <p>Illustrations</p>
+                    <p>Motion design</p>
+                    <p>2d & 3d graphics</p>
+                    <p>Design systems</p>
                     <br>
-                    <p class="l9">Two request at a time</p>
+                    <p class="l9">Three requests at a time</p>
                     <p class="l9">Access to premium image and video assets</p>
-                    <p class="l9">Free 6 months hosting for websites</p>
-                    <p class="l9">Free domain name for websites</p>
+                    <p class="l9">Free 24 months hosting for websites</p>
+
                 </div>
                 <a href="https://flutterwave.com/pay/xenoxforge_gold">
                     <div class="atom_button">Start project</div>
                 </a>
             </div>
-            <div class="atom_box st7">
+            <!-- <div style="min-height: max-content !important;" class="atom_box st7">
                 <div class="atom_text">
                     Book a call
                 </div>
@@ -1248,80 +1520,144 @@
                 <a target="_blank" href="mailto:xenoxforge@gmail.com">
                     <div class="atom_button">Message</div>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function () {
+                var navbar = document.getElementById("navbar");
+                var desmond = document.getElementById("desmond");
+
+                if (window.scrollY > window.innerHeight * 0.2) {
+                    navbar.classList.add("bo");
+                    desmond.classList.add("po");
+                } else {
+                    navbar.classList.remove("bo");
+                    desmond.classList.remove("po");
+                }
+            });
+        });
+    </script>
+
+
     <footer class="container">
         <div class="atom_27">
             <h3>OUR PRODUCTION</h3>
             <br>
-            <p class="atom_link">DESIGN SERIES</p>
-            <a href="../who we are"><p class="atom_link">WHO WE ARE</p></a>
+            <a class="up" href="../who we are/">
+                <p class="atom_link">WHO WE ARE</p>
+            </a>
+            <p style="display: flex;align-items: center;"><i style="margin-right:5px" class="ri-copyright-line"></i>
+                2024 Xenoxforge Creative Studios.</p>
+            <p>All rights reserved.</p>
+
+        </div>
+        <div class="atom_27">
+            <h3>OUR CLIENTELE</h3>
+            <br>
+
+            <p class="atom_link">United States</p>
+            <p class="atom_link">United Kingdom</p>
+            <p class="atom_link">Australia</p>
+            <p class="atom_link">Canada</p>
+            <p class="atom_link">Germany</p>
+            <p class="atom_link">Nigeria</p>
+
         </div>
         <div class="atom_28">
             <h3>REPUBLIC OF XENOXFORGE</h3>
             <br>
-            <div class="st9">
+            <div class="st9 up">
                 <a href="https://dribbble.com/xenoxforge" target="_blank"><img src="../assets/dribbble.svg" alt=""></a>
-                <a href="https://facebook.com/xenoxforgecreativestudios" target="_blank"><img src="../assets/facebook.svg"
-                        alt=""></a>
-                <a href="https://www.instagram.com/xenoxforge.studio/" target="_blank"><img src="../assets/instagram.svg"
-                        alt=""></a>
-                <a href="https://twitter.com/xenoxforge" target="_blank"><img src="../assets/twitter.svg" alt=""></a>
+                <a href="https://www.instagram.com/xenoxforge.studio/" target="_blank"><img
+                        src="../assets/instagram.svg" alt=""></a>
+            </div>
+            <br>
+            <div class="st9 up">
+                <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right:10px;"
+                        target="_blank" href="mailto:studio@xenoxforge.com">Studio@xenoxforge.com</a> <i
+                        class="ri-external-link-line"></i></p>
+                <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right:10px"
+                        target="_blank" href="mailto:team@xenoxforge.com">Team@xenoxforge.com</a> <i
+                        class="ri-external-link-line"></i></p>
             </div>
         </div>
         <div class="atom_29">
             <img src="../assets/Group 39.svg" alt="">
         </div>
-        <!-- <div class="atom_30">
-            <img src="../assets/logo_ideal.png" alt="">
-        </div> -->
     </footer>
 </body>
+
+<script src="../assets/js/xenoxforge.js"></script>
 <script>
-    var width = 100,
-        perfData = window.performance.timing,
-        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-        time = parseInt((EstimatedTime / 1000) % 60) * 100;
+    console.clear();
 
-    $(".loadbar").animate({
-        width: width + "%"
-    }, time);
+    // Select the circle element
+    const circleElement = document.querySelector('.circle');
 
+    // Create objects to track mouse position and custom cursor position
+    const mouse = { x: 0, y: 0 }; // Track current mouse position
+    const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
+    const circle = { x: 0, y: 0 }; // Track the circle position
 
-    $(".glow").animate({
-        width: width + "%"
-    }, time);
+    // Initialize variables to track scaling and rotation
+    let currentScale = 0; // Track current scale value
+    let currentAngle = 0; // Track current angle value
 
+    // Update mouse position on the 'mousemove' event
+    window.addEventListener('mousemove', (e) => {
+        mouse.x = e.x;
+        mouse.y = e.y;
+    });
 
-    var PercentageID = $("#precent"),
-        start = 0,
-        end = 100,
-        durataion = time;
-    animateValue(PercentageID, start, end, durataion);
+    // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
+    const speed = 0.17;
 
-    function animateValue(id, start, end, duration) {
+    // Start animation
+    const tick = () => {
+        // MOVE
+        // Calculate circle movement based on mouse position and smoothing
+        circle.x += (mouse.x - circle.x) * speed;
+        circle.y += (mouse.y - circle.y) * speed;
+        // Create a transformation string for cursor translation
+        const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
 
-        var range = end - start,
-            current = start,
-            increment = end > start ? 1 : -1,
-            stepTime = Math.abs(Math.floor(duration / range)),
-            obj = $(id);
+        // SQUEEZE
+        // 1. Calculate the change in mouse position (deltaMouse)
+        const deltaMouseX = mouse.x - previousMouse.x;
+        const deltaMouseY = mouse.y - previousMouse.y;
+        // Update previous mouse position for the next frame
+        previousMouse.x = mouse.x;
+        previousMouse.y = mouse.y;
+        // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
+        const mouseVelocity = Math.min(Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 4, 150);
+        // 3. Convert mouse velocity to a value in the range [0, 0.5]
+        const scaleValue = (mouseVelocity / 150) * 0.5;
+        // 4. Smoothly update the current scale
+        currentScale += (scaleValue - currentScale) * speed;
+        // 5. Create a transformation string for scaling
+        const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
 
-        var timer = setInterval(function () {
-            current += increment;
-            $(obj).text(current + "%");
+        // ROTATE
+        // 1. Calculate the angle using the atan2 function
+        const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
+        // 2. Check for a threshold to reduce shakiness at low mouse velocity
+        if (mouseVelocity > 20) {
+            currentAngle = angle;
+        }
+        // 3. Create a transformation string for rotation
+        const rotateTransform = `rotate(${currentAngle}deg)`;
 
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, stepTime);
+        // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
+        circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+
+        // Request the next frame to continue the animation
+        window.requestAnimationFrame(tick);
     }
 
-    setTimeout(function () {
-        $('.preloader-wrap').fadeOut(300);
-    }, time);
-
+    // Start the animation loop
+    tick();
 </script>
 
 </html>

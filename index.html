@@ -4,39 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leading Software Development & Design Agency</title>
   <meta name="description"
     content="Start Your Project Today: Expertly creating websites, apps, and stunning designs for individuals, startups, and businesses. Get started now">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Software Development and Design Agency in Nigeria">
+  <meta property="og:title" content="Software Development and Design Agency">
   <meta property="og:description"
     content="Start Your Project Today: We specialize in crafting exceptional websites, apps, and design solutions for individuals, startups, and businesses. Get started now">
-  <meta property="og:image" content="assets/atom_3.png">
+  <meta property="og:image" content="https://xenoxforge.com/assets/logo.png">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
   <meta property="og:url" content="https://xenoxforge.com">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@xenoxforge">
-  <link rel="shortcut icon" href="assets/logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="twitter:image" content="https://xenoxforge.com/assets/logo.png">
+  <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="assets/stylesheets/xenoxforge.css">
-  <link href="https://api.fontshare.com/v2/css?f[]=supreme@800,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=author@501,400,500,200,2,301,601,600,1,300,700,201,701,401&display=swap"
+    rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <title>Leading Software Development & Design Agency in Nigeria</title>
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Corporation",
-      "name": "xenoxforge",
-      "alternateName": "xenoxforge creative studios",
-      "url": "https://xenoxforge.com",
-      "logo": "https://xenoxforge.com/assets/logo.png",
-      "sameAs": [
-        "https://www.instagram.com/xenoxforge.studio/",
-        "https://web.facebook.com/xenoxforgecreativestudios/",
-        "https://twitter.com/xenoxforge",
-        "https://xenoxforge.com"
-      ]
-    }
-    </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "xenoxforge Creative Studios",
+        "alternateName": "xenoxforge creative studios",
+        "url": "https://xenoxforge.com",
+        "logo": "https://xenoxforge.com/assets/logo.png",
+        "sameAs": [
+          "https://www.instagram.com/xenoxforge.studio/",
+          "https://web.facebook.com/xenoxforgecreativestudios/",
+          "https://twitter.com/xenoxforge",
+          "https://xenoxforge.com"
+        ]
+      }
+  </script>
   <style>
     .atom_12 {
       background-color: #D5FF8F;
@@ -159,7 +165,7 @@
       margin-top: 1.5rem;
       font-size: 25px;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       cursor: pointer;
       transition: all .5s ease;
     }
@@ -431,7 +437,8 @@
     }
 
     body {
-      background: url("assets/layer.svg");
+      background: url("assets/layer_1.svg");
+
     }
 
     .atom_27,
@@ -482,7 +489,7 @@
 
     .atom_link:hover {
       text-decoration: underline;
-      color: #FF5CA9;
+      color: #D5FF8F;
       cursor: pointer;
     }
 
@@ -938,14 +945,14 @@
       }
 
       .atom_8 {
-        height: 150px;
+        height: 200px;
       }
 
       .atom_24 {
         margin-top: -50px;
       }
 
-      .atom_8 div:nth-child(1) {
+      .atom_8 div:nth-child(2) {
         display: none;
 
       }
@@ -1048,7 +1055,7 @@
       position: fixed;
       top: 0;
       bottom: 0;
-      background: var(--black);
+      background: black;
       z-index: 99999;
     }
 
@@ -1064,7 +1071,7 @@
     .loader,
     .percentage {
       height: 5px;
-      max-width: 200px;
+      max-width: 50px;
       border: none;
       border-radius: 20px;
       font-weight: 300;
@@ -1102,7 +1109,7 @@
     .loadbar {
       width: 0%;
       height: 100%;
-      background-color: var(--n);
+      background-color: #fff;
       position: absolute;
       top: 0;
       left: 0;
@@ -1143,17 +1150,485 @@
       text-decoration: none;
       color: unset !important;
     }
-    .whatsapp{
+
+    .whatsapp {
       position: fixed;
-      bottom:10px;
-      right:10px;
-      width:80px;
+      bottom: 10px;
+      right: 10px;
+      width: 80px;
     }
+
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .logos {
+      overflow: hidden;
+      padding: 60px 0;
+      background: white;
+      white-space: nowrap;
+
+      position: sticky;
+    }
+
+    .logos:before,
+    .logos:after {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+    .logos:before {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+
+    .logos:after {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
+
+    .logos:hover .logos-slide {
+      animation-play-state: paused;
+    }
+
+    .logos-slide {
+      display: inline-block;
+      animation: 30s slide infinite linear;
+    }
+
+    .logos-slide img {
+      height: 50px;
+      margin: 0 40px;
+    }
+
+    @media screen and (max-width:700px) {
+      .logos {
+        background: white;
+        padding: 30px 0;
+      }
+
+      .logos:before {
+        left: 0;
+        background: none;
+      }
+
+      .logos-slide img {
+        height: 20px;
+        margin: 0 20px;
+      }
+
+      .logos:after {
+        right: 0;
+        background: none;
+      }
+
+      .lean {
+        text-align: center;
+      }
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .bo {
+      border-radius: 100%;
+      width: 70px;
+      background-color: black;
+      backdrop-filter: blur(10px);
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: fixed;
+      top: 5px;
+      z-index: 999;
+      left: 10px;
+    }
+
+    .lk {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1.5% 2%;
+    }
+
+    .mk {
+      width: 50px !important;
+    }
+
+    .desmond {
+      border-radius: 100px;
+      background-color: #D5FF8F;
+      width: 220px;
+      height: 60px;
+      position: fixed;
+      top: 5px;
+      display: none;
+      align-items: center;
+      z-index: 999999 !important;
+      right: 10px;
+      padding: 20px;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .po {
+      display: flex;
+    }
+
+    .atom_img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    /* .desmond{
+      transition: background-color 1s ease;
+    } */
+    .every_thing_black {
+      background-color: #fff;
+      width: 100%;
+      z-index: 9999 !important;
+      padding: 15px;
+      font-size: 18px;
+      position: relative;
+      text-align: center;
+    }
+
+    .atom_4 img {
+      transform: rotate(3deg);
+    }
+
+    .shade {
+      position: fixed;
+      bottom: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
+      width: 100%;
+      z-index: 99;
+    }
+
+    .atom_15 {
+      z-index: 999;
+    }
+
+    .up {
+      z-index: 9999 !important;
+      position: relative;
+    }
+
+    .atom_discover {
+      width: 100%;
+      height: 70px;
+      background-color: #D5FF8F;
+      color: var(--black);
+      font: var(--font);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      margin-top: 1.5rem;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .5s ease;
+    }
+
+    .atom_5 p span {
+      font-weight: 500;
+    }
+
+    .reel {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      width: 500px;
+      max-width: 90%;
+      height: 4.5rem;
+      border-radius: 100px;
+      background-color: rgba(255, 255, 255, 0.20);
+      backdrop-filter: blur(30px);
+      z-index: 9999999 !important;
+      margin: auto;
+      display: flex;
+      padding: 5px;
+      font-size: 22px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hello {
+      width: 50%;
+      height: 100%;
+      /* background-color: rgba(255, 255, 255, 0.05); */
+      backdrop-filter: blur(10px);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 100px;
+    }
+
+    .showreel {
+      display: flex;
+      align-items: center;
+      width: 48%;
+      font-weight: 600;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .showreel:hover {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-weight: 600;
+      justify-content: center;
+      border-radius: 100px;
+      cursor: pointer;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    @media screen and (max-width:800px) {
+      .reel {
+        font-size: 18px;
+      }
+    }
+
+    .reel_item {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      overflow: hidden;
+      width: 99%;
+      height: 86vh;
+      margin: 0 auto;
+      z-index: 9999999;
+      background-color: #C1FF5C;
+      display: flex;
+      /* border-radius: 30px; */
+
+    }
+
+    .reel_1 {
+      width: 60%;
+      height: 100%;
+    }
+
+
+    .reel_2 {
+      width: 40%;
+      height: 100%;
+    }
+
+    .reel_1 div:nth-child(1) {
+      width: 100%;
+      height: 40%;
+      background-color: #FEFE03;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .reel_1 div:nth-child(2) {
+      width: 100%;
+      height: 60%;
+      background-color: #FF5CA9;
+      position: relative;
+      padding: 1rem;
+    }
+
+    .reel_1 div:nth-child(2) img {
+      width: 30%;
+      height: auto;
+
+    }
+
+    .reel_1 div:nth-child(2) video {
+      width: 65%;
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+      right: 0;
+      height: 100%;
+      object-position: 0%;
+      border-top-left-radius: 0px;
+    }
+
+    .reel_1 div:nth-child(1) img {
+      width: 50%;
+      height: auto;
+    }
+
+    .reel_2>div {
+      height: 100%;
+      width: 100%;
+      padding: 10%;
+      background-color: #C1FF5C;
+    }
+
+    .reel_2>div h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .reel_2>div img {
+      width: 100%;
+      height: auto;
+    }
+
+    .reel_item_1 {
+      position: relative;
+    }
+
+    .check {
+      position: absolute;
+      width: 80%;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      border-radius: 50px;
+      background-color: rgba(255, 255, 255, 0.50);
+      backdrop-filter: blur(30px);
+      height: 5rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width:1000px) {
+      .reel_2>div h1 {
+        font-size: 2rem;
+      }
+
+      .reel_2>div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0%;
+      }
+    }
+
+    @media screen and (max-width:700px) {
+      .reel_2>div h1 {
+        font-size: 2rem;
+      }
+
+      .reel_2>div img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .reel_item {
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .reel_1 {
+        width: 100%;
+        min-height: 30rem !important;
+        flex-direction: column;
+      }
+
+
+      .reel_2 {
+        width: 100%;
+        min-height: 100%;
+      }
+
+      .reel_2>div {
+        height: 100% !important;
+        padding: 5%;
+      }
+
+      .reel_1 div:nth-child(1) {
+        width: 100%;
+        max-height: 10rem !important;
+        background-color: #FEFE03;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .reel_1 div:nth-child(2) {
+        width: 100%;
+        overflow: hidden;
+        min-height: 20rem;
+        background-color: #FF5CA9;
+        position: relative;
+        padding: 1rem;
+      }
+
+      .reel_2>div img {
+        width: 100%;
+        height: 90%;
+        align-self: baseline;
+        object-fit: cover;
+        object-position: 0%;
+      }
+    }
+    .fade{
+      display: none !important;
+    }
+    
+    .circle{
+      display: none;
+    }
+    body{
+      cursor: none !important;
+    }
+    @media screen and (min-width:700px){
+      .circle {
+  --circle-size: 40px;
+  position: fixed;
+  height: 20px;
+  display: block;
+  width: 20px;
+  border: 1px solid white;
+  border-radius: 100%;
+  top: calc(20px / 2 * -1);
+  left: calc(20px / 2 * -1);
+  z-index: 999999999;
+  pointer-events: none;
+}
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="preloader-wrap">
+<div class="circle"></div>
+  <div class="shade"></div>
+  <div class="every_thing_black">
+    <a target="_blank" href="mailto:studio@xenoxforge.com"><span>Building global brands that stand out.</span></a>
+  </div>
+  <!-- <div class="preloader-wrap">
     <div style="display: none;" class="percentage" id="precent"></div>
     <div class="loader">
       <div class="trackbar">
@@ -1161,40 +1636,92 @@
       </div>
       <div class="glow"></div>
     </div>
-  </div>
-  <!-- <div class="atom_boom">
-    <iframe style="border-radius:12px"
-      src="https://open.spotify.com/embed/track/1eSvZHooxR3QXnNGsUTbHD?utm_source=generator&theme=0" width="100%"
-      height="152" frameBorder="0" allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div> -->
-  <header>
-    <div class="atom_1">
-      <img src="assets/forge_long.svg" alt="">
+  <div class="reel_item fade">
+    <div class="reel_1">
+      <div>
+        <img src="assets/Well,hello!.svg" alt="">
+      </div>
+      <div class="reel_item_1">
+        <img src="assets/cq_logo.svg" alt="">
+        <video autoplay muted loop src="assets/reel.mp4"></video>
+        <div class="check">
+          Recent projects
+        </div>
+      </div>
     </div>
-    <div class="atom_2 ">
-      <div class="animate__animated animate__fadeIn animate__delay-1s">Building Fast for Businesses</div>
-     
-        <div class="atom_link"> <a href='kickstart/'>CONTACT SALES</a></div>
-   
+    <div class="reel_2">
+      <div style="position: relative;">
+        <h1>We are working on the next cool thing!</h1>
+        <p style="font-size: 18px;">The only way for freelancers, creatives and agencies to send smart questionnaires to
+          their prospects and clients.</p>
+        <br>
+        <img style="border-radius: 50px;" src="assets/cq.svg" alt="">
+        <a href="https://clientquestionnaire.com">
+          <div class="check">
+            clientquestionnaire.com
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="reel">
+    <div class="hello">Say Hello</div>
+    <div class="showreel"><a target="_blank" href="https://medium.com/@xenoxforge/holla-928989ffde4b">Our blog</a></div>
+  </div>
+  <script>
+    $(".hello").click(function(){
+      $(".reel_item").toggleClass("fade")
+    })
+  </script>
+  <a target="_blank" href="mailto:studio@xenoxforge.com">
+    <div class='desmond' id="desmond">
+      TWO OPEN SLOTS <span class="pointer" style="font-size: 2rem;margin-left:10px">👀</span>
+    </div>
+  </a>
+  <header>
+    <div class="atom_1" id="navbar" style="padding:10px;z-index: 99999;">
+      <img class="mk" style="width:60px !important;height:auto" src="assets/logo_ideal.png" alt="">
+    </div>
+    <div class="atom_2 " style="padding:10px">
+      <div class="animate__animated animate__fadeIn animate__delay-1s cos">THE CREATORS OS</div>
+
+      <div class="atom_link up"> <a target="_blank" href="mailto:studio@xenoxforge.com">STUDIO : KICKSTART</a></div>
+
     </div>
   </header>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        var desmond = document.getElementById("desmond");
 
+        if (window.scrollY > window.innerHeight * 0.2) {
+          navbar.classList.add("bo");
+          desmond.classList.add("po");
+        } else {
+          navbar.classList.remove("bo");
+          desmond.classList.remove("po");
+        }
+      });
+    });
+
+  </script>
   <div class="atom_3 container">
-    <div class="atom_4">
-      <!-- <h1>THE</h1>
-      <h1><span>B</span><span>R</span><span>A</span><span>N</span><span>D</span></h1>
-      <h1>WORKSHOP</h1> -->
-      <img class="animate__animated animate__fadeIn" src="assets/Group 44.svg" alt="">
+    <div class="atom_4 up">
+      <img class="animate__animated animate__fadeIn" meta name="robots" content="noindex" src="assets/Group 11.png"
+        alt="">
     </div>
-    <div class="atom_5 animate__animated animate__fadeIn">
-      <p><span>Xenoxforge</span> is a leading software development, design and creative media company in Nigeria. We
-        help businesses build
-        experiences that work.</p>
+    <div class="atom_5 animate__animated animate__fadeIn up">
+      <p class="lean"><span>Xenoxforge Creative Studios</span> is a leading software development, design & creative
+        agency, working with
+        founders
+        & businesses across the world build genius brand experiences.</p>
       <p class="bnm"> <span class="atom_9">STARTUPS .
           BUSINESSES . INDIVIDUALS</span></p>
-      <div id="atom_scroll" class="atom_discover">
-        DISCOVER
+      <div id="atom_scroll" class="atom_discover" style="font-weight: 900;">
+        SHOW ME
       </div>
     </div>
   </div>
@@ -1203,27 +1730,32 @@
     <p>Building apps, websites and content experiences that actually <br> work for <span class="atom_9">STARTUPS .
         BUSINESSES . INDIVIDUALS</span></p>
   </div>
-  <div class="atom_7" id="atom_init">
-    <div class="atom_starred">
-      <div class="marquee-container">
-        <div class="marquee-content  atom_starred_1">
-          <div>WIREFRAMES</div>
-          <div>DESIGN SYSTEMS</div>
-          <div>WEBSITES</div>
-          <div>SAAS</div>
-          <div>EMAIL DESIGNS</div>
-        </div>
-      </div>
+  <div class="logos">
+    <div class="logos-slide">
+      <img src="assets/offers/Wireframes.svg" />
+      <img src="assets/offers/Design systems.svg" />
+      <img src="assets/offers/Websites.svg" />
+      <img src="assets/offers/APP DEVELOPMENT.svg" />
+      <img src="assets/offers/SAAS.svg" />
+      <img src="assets/offers/Email design.svg" />
     </div>
-    <img src="assets/Group 41.svg" alt="">
+
+    <div class="logos-slide">
+      <img src="assets/offers/Wireframes.svg" />
+      <img src="assets/offers/Design systems.svg" />
+      <img src="assets/offers/Websites.svg" />
+      <img src="assets/offers/APP DEVELOPMENT.svg" />
+      <img src="assets/offers/SAAS.svg" />
+      <img src="assets/offers/Email design.svg" />
+    </div>
   </div>
   <div class="container"></div>
-  <div class="atom_8">
+  <div class="atom_8 up" id="atom_init">
     <div>
-      <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_5.png" alt="">
+      <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/port_1.png" alt="">
     </div>
     <div>
-      <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_3.png" alt="">
+      <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/port_3.png" alt="">
     </div>
     <div>
       <img class="atom_img lazy-load" src="assets/Group 49.png" data-src="assets/atom_4.png" alt="">
@@ -1281,6 +1813,7 @@
           <p>SAAS</p>
           <p>Design systems</p>
           <p>Illustrations</p>
+          <p>Motion graphics</p>
         </div>
       </div>
       <div class="atom_15">
@@ -1291,7 +1824,7 @@
             <div class="atom_text">
               Pay per project
             </div>
-            <a target="_blank" href="kickstart/">
+            <a target="_blank" href="mailto:studio@xenoxforge.com">
               <div class="atom_button">Start project</div>
             </a>
           </div>
@@ -1330,7 +1863,7 @@
         </p>
       </div>
     </div>
-    <div class="atom_19">
+    <div class="atom_19 up">
       <img class="v1 atom_float" src="assets/cloud_3.png" alt="">
       <div class="v3">
         <img class="v2" src="assets/big_brand.png" alt="">
@@ -1347,6 +1880,7 @@
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="atom_collect_2">
       <div class="a_row hex">
@@ -1360,6 +1894,7 @@
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="atom_collect_3">
       <div class="a_row hex">
@@ -1369,9 +1904,12 @@
       </div>
     </div>
   </div>
+
   <div class="container atom_20">
     <p>Terms and conditions apply &nbsp; &nbsp; SAAS projects excluded.</p>
   </div>
+
+
   <div class="atom_21">
     <div class="cloud_1">
       <img src="assets/cloud_5.svg" alt="">
@@ -1389,9 +1927,9 @@
         <img class="atom_float" src="assets/cloud_6.svg" alt="">
       </div>
     </div>
-    <div class="atom_8 st1">
+    <div class="atom_8 st1 up">
       <div>
-        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_3.png" alt="">
+        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/port_2.png" alt="">
       </div>
       <div>
         <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_5.png" alt="">
@@ -1400,18 +1938,29 @@
         <img class="atom_img lazy-load" src="assets/Group 49.png" data-src="assets/atom_4.png" alt="">
       </div>
     </div>
-    <div class="atom_8 st1">
+    <div class="atom_8 st1 up">
       <div>
-        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_2.png" alt="">
+        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/port_3.png" alt="">
       </div>
       <div>
-        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_6.png" alt="">
+        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_7.png" alt="">
       </div>
       <div>
-        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_1.png" alt="">
+        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/port_4.png" alt="">
       </div>
     </div>
-    <div class="atom_24">
+    <div class="atom_8 st1 up">
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_8.png" alt="">
+      </div>
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_11.png" alt="">
+      </div>
+      <div>
+        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_12.png" alt="">
+      </div>
+    </div>
+    <div class="atom_24 up">
       <div class="v3">
         <img class="v2" src="assets/forge.png" alt="">
       </div>
@@ -1448,13 +1997,13 @@
       </div>
 
     </div>
-    <div class="atom_16 st3 container">
+    <div class="atom_16 st3 container up">
       <div class="atom_box ">
         <h3>Recommended for small businesses</h3>
         <div class="atom_text">
           Pay per project
         </div>
-        <a target="_blank" href="kickstart/">
+        <a target="_blank" href="mailto:studio@xenoxforge.com">
           <div class="atom_button">Start project</div>
         </a>
       </div>
@@ -1483,10 +2032,47 @@
         </a>
       </div>
     </div>
-    <div class="atom_19">
+    <div class="atom_19 up">
       <div class="v3">
         <img class="v2" src="assets/teams.png" alt="">
       </div>
+    </div>
+  </div>
+
+
+
+  <style>
+    .founders_note {
+      background-color: #fff;
+      color: black;
+      padding: 2rem;
+      max-width: 95%;
+      width: 50rem;
+      height: max-content;
+      border-radius: 50px;
+    }
+
+    .founders_note img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  </style>
+  <div>
+
+  </div>
+  <div class="container" style="justify-content:center;display: flex;">
+    <div class="founders_note up">
+      <div>
+        <img style="margin-right:10px;float:left" src="assets/WhatsApp Image 2024-01-10 at 7.49.14 PM.jpeg" alt="">
+        <div>
+          <p>Building an iconic brand is hard. We build all approachable in hard.
+            <br>
+            <br>
+          <p style="font-weight: 500;">Kenneth Okpala alias Eaelll Leon Faust (Designlead, Xenoxforge Studios)</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -1499,9 +2085,11 @@
       <h2>Why do you have a subscription based service?</h2>
       <p>One word - To save you a ton of money.
         <br>
-        The cost of hiring an agency like ours or a full time senior-level developer/designer goes up to thousands of
-        dollars. With our subscription, you only get to pay for as long as you’d require our service, and make as many
-        request as you want.
+        The cost of hiring an agency like ours or a full time senior-level developer/designer goes up to hundreds of
+        thousands of
+        dollars, even for a single project. With our subscription, you only get to pay for as long as you’d require our
+        services, and make as many
+        requests as you'd need.
         <br>
         Not to mention you can pause your subscription and continue whenever you want.
         There couldn’t be a better deal.
@@ -1526,34 +2114,120 @@
       <p>We revise your project until you are satisfied with it. Nothing less.</p>
     </div>
   </div>
+  <div class="container up">
+    <a href="mailto:studio@xenoxforge.com"><img style="width: 100%;height: auto;" src="assets/take_slot.png" alt=""></a>
+  </div>
   <footer class="container">
     <div class="atom_27">
       <h3>OUR PRODUCTION</h3>
       <br>
-      <p class="atom_link">DESIGN SERIES</p>
-      <a href="who we are/"><p class="atom_link">WHO WE ARE</p></a>
+      <a class="up" href="who we are/">
+        <p class="atom_link">WHO WE ARE</p>
+      </a>
+      <p style="display: flex;align-items: center;"><i style="margin-right:5px" class="ri-copyright-line"></i> 2024 Xenoxforge Creative Studios.</p>
+      <p>All rights reserved.</p>
+    </div>
+    <div class="atom_27">
+      <h3>OUR CLIENTELE</h3>
+      <br>
+
+      <p class="atom_link">United States</p>
+      <p class="atom_link">United Kingdom</p>
+      <p class="atom_link">Australia</p>
+      <p class="atom_link">Canada</p>
+      <p class="atom_link">Germany</p>
+      <p class="atom_link">Nigeria</p>
+
     </div>
     <div class="atom_28">
       <h3>REPUBLIC OF XENOXFORGE</h3>
       <br>
-      <div class="st9">
+      <div class="st9 up">
         <a href="https://dribbble.com/xenoxforge" target="_blank"><img src="assets/dribbble.svg" alt=""></a>
-        <a href="https://facebook.com/xenoxforgecreativestudios" target="_blank"><img src="assets/facebook.svg"
-            alt=""></a>
         <a href="https://www.instagram.com/xenoxforge.studio/" target="_blank"><img src="assets/instagram.svg"
             alt=""></a>
-        <a href="https://twitter.com/xenoxforge" target="_blank"><img src="assets/twitter.svg" alt=""></a>
+      </div>
+      <br>
+      <div class="st9 up">
+        <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right:10px;" target="_blank"
+            href="mailto:studio@xenoxforge.com">Studio@xenoxforge.com</a> <i class="ri-external-link-line"></i></p>
+        <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right:10px" target="_blank"
+            href="mailto:team@xenoxforge.com">Team@xenoxforge.com</a> <i class="ri-external-link-line"></i></p>
       </div>
     </div>
     <div class="atom_29">
       <img src="assets/Group 39.svg" alt="">
     </div>
-    <!-- <div class="atom_30">
-      <img src="assets/logo_ideal.png" alt="">
-    </div> -->
   </footer>
 </body>
-
 <script src="assets/js/xenoxforge.js"></script>
+<script>
+console.clear();
 
+// Select the circle element
+const circleElement = document.querySelector('.circle');
+
+// Create objects to track mouse position and custom cursor position
+const mouse = { x: 0, y: 0 }; // Track current mouse position
+const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
+const circle = { x: 0, y: 0 }; // Track the circle position
+
+// Initialize variables to track scaling and rotation
+let currentScale = 0; // Track current scale value
+let currentAngle = 0; // Track current angle value
+
+// Update mouse position on the 'mousemove' event
+window.addEventListener('mousemove', (e) => {
+  mouse.x = e.x;
+  mouse.y = e.y;
+});
+
+// Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
+const speed = 0.17;
+
+// Start animation
+const tick = () => {
+  // MOVE
+  // Calculate circle movement based on mouse position and smoothing
+  circle.x += (mouse.x - circle.x) * speed;
+  circle.y += (mouse.y - circle.y) * speed;
+  // Create a transformation string for cursor translation
+  const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+
+  // SQUEEZE
+  // 1. Calculate the change in mouse position (deltaMouse)
+  const deltaMouseX = mouse.x - previousMouse.x;
+  const deltaMouseY = mouse.y - previousMouse.y;
+  // Update previous mouse position for the next frame
+  previousMouse.x = mouse.x;
+  previousMouse.y = mouse.y;
+  // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
+  const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
+  // 3. Convert mouse velocity to a value in the range [0, 0.5]
+  const scaleValue = (mouseVelocity / 150) * 0.5;
+  // 4. Smoothly update the current scale
+  currentScale += (scaleValue - currentScale) * speed;
+  // 5. Create a transformation string for scaling
+  const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
+
+  // ROTATE
+  // 1. Calculate the angle using the atan2 function
+  const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
+  // 2. Check for a threshold to reduce shakiness at low mouse velocity
+  if (mouseVelocity > 20) {
+    currentAngle = angle;
+  }
+  // 3. Create a transformation string for rotation
+  const rotateTransform = `rotate(${currentAngle}deg)`;
+
+  // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
+  circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+
+  // Request the next frame to continue the animation
+  window.requestAnimationFrame(tick);
+}
+
+// Start the animation loop
+tick();
+</script>
 </html>
