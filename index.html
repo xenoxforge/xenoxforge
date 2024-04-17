@@ -1593,37 +1593,44 @@
         object-position: 0%;
       }
     }
-    .fade{
+
+    .fade {
       display: none !important;
     }
-    
-    .circle{
+
+    .circle {
       display: none;
     }
-    body{
+
+    body {
       cursor: none !important;
     }
-    @media screen and (min-width:700px){
-      .circle {
-  --circle-size: 40px;
-  position: fixed;
-  height: 20px;
-  display: block;
-  width: 20px;
-  border: 1px solid white;
-  border-radius: 100%;
-  top: calc(20px / 2 * -1);
-  left: calc(20px / 2 * -1);
-  z-index: 999999999;
-  pointer-events: none;
-}
-    }
 
+    @media screen and (min-width:700px) {
+      .circle {
+        --circle-size: 40px;
+        position: fixed;
+        height: 100px;
+        display: block;
+        width: 100px;
+        background-color:transparent;
+        border-radius: 100%;
+        top: calc(20px / 2 * -1);
+        left: calc(20px / 2 * -1);
+        z-index: 999999999;
+        pointer-events: none;
+      }
+    }
+    *{
+      cursor:none !important;
+    }
   </style>
 </head>
 
 <body>
-<div class="circle"></div>
+  <div class="circle"> 
+    <img style="width: 100%;height: auto;" src="assets/seth.svg" alt="">
+  </div>
   <div class="shade"></div>
   <div class="every_thing_black">
     <a target="_blank" href="mailto:studio@xenoxforge.com"><span>Building global brands that stand out.</span></a>
@@ -1671,7 +1678,7 @@
     <div class="showreel"><a target="_blank" href="https://medium.com/@xenoxforge/holla-928989ffde4b">Our blog</a></div>
   </div>
   <script>
-    $(".hello").click(function(){
+    $(".hello").click(function () {
       $(".reel_item").toggleClass("fade")
     })
   </script>
@@ -2124,7 +2131,8 @@
       <a class="up" href="who we are/">
         <p class="atom_link">WHO WE ARE</p>
       </a>
-      <p style="display: flex;align-items: center;"><i style="margin-right:5px" class="ri-copyright-line"></i> 2024 Xenoxforge Creative Studios.</p>
+      <p style="display: flex;align-items: center;"><i style="margin-right:5px" class="ri-copyright-line"></i> 2024
+        Xenoxforge Creative Studios.</p>
       <p>All rights reserved.</p>
     </div>
     <div class="atom_27">
@@ -2172,10 +2180,6 @@ const mouse = { x: 0, y: 0 }; // Track current mouse position
 const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
 const circle = { x: 0, y: 0 }; // Track the circle position
 
-// Initialize variables to track scaling and rotation
-let currentScale = 0; // Track current scale value
-let currentAngle = 0; // Track current angle value
-
 // Update mouse position on the 'mousemove' event
 window.addEventListener('mousemove', (e) => {
   mouse.x = e.x;
@@ -2194,34 +2198,8 @@ const tick = () => {
   // Create a transformation string for cursor translation
   const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
 
-  // SQUEEZE
-  // 1. Calculate the change in mouse position (deltaMouse)
-  const deltaMouseX = mouse.x - previousMouse.x;
-  const deltaMouseY = mouse.y - previousMouse.y;
-  // Update previous mouse position for the next frame
-  previousMouse.x = mouse.x;
-  previousMouse.y = mouse.y;
-  // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
-  const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
-  // 3. Convert mouse velocity to a value in the range [0, 0.5]
-  const scaleValue = (mouseVelocity / 150) * 0.5;
-  // 4. Smoothly update the current scale
-  currentScale += (scaleValue - currentScale) * speed;
-  // 5. Create a transformation string for scaling
-  const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
-
-  // ROTATE
-  // 1. Calculate the angle using the atan2 function
-  const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
-  // 2. Check for a threshold to reduce shakiness at low mouse velocity
-  if (mouseVelocity > 20) {
-    currentAngle = angle;
-  }
-  // 3. Create a transformation string for rotation
-  const rotateTransform = `rotate(${currentAngle}deg)`;
-
-  // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
-  circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+  // Apply transformation to the circle element
+  circleElement.style.transform = translateTransform;
 
   // Request the next frame to continue the animation
   window.requestAnimationFrame(tick);
@@ -2229,5 +2207,7 @@ const tick = () => {
 
 // Start the animation loop
 tick();
+
 </script>
+
 </html>
