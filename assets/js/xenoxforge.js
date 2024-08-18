@@ -37,9 +37,7 @@ if (current == end) {
 }, stepTime);
 }
 
-setTimeout(function(){
-$('.preloader-wrap').fadeOut(300);
-}, time);
+
 
 const scrollButton = document.getElementById('atom_scroll');
 const targetElement = document.getElementById('atom_init');

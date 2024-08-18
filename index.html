@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leading Software Development & Design Agency</title>
+  <title>Forge - Creative & Software Studio</title>
   <meta name="description"
-    content="Start Your Project Today: Expertly creating websites, apps, and stunning designs for individuals, startups, and businesses. Get started now">
+    content="We help businesses build genius brand experiences for their customers. We build everything approachable in hard.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Software Development and Design Agency">
+  <meta property="og:title" content=">Forge - Creative & Software Studio">
   <meta property="og:description"
-    content="Start Your Project Today: We specialize in crafting exceptional websites, apps, and design solutions for individuals, startups, and businesses. Get started now">
+    content="We help businesses build genius brand experiences for their customers. We build everything approachable in hard.">
   <meta property="og:image" content="https://xenoxforge.com/assets/logo.png">
   <meta property="og:image:width" content="200">
   <meta property="og:image:height" content="200">
-  <meta property="og:url" content="https://xenoxforge.com">
+  <meta property="og:url" content="https://studio.xenoxforge.com">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@xenoxforge">
   <meta name="twitter:image" content="https://xenoxforge.com/assets/logo.png">
@@ -27,22 +27,6 @@
     rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Corporation",
-        "name": "xenoxforge Creative Studios",
-        "alternateName": "xenoxforge creative studios",
-        "url": "https://xenoxforge.com",
-        "logo": "https://xenoxforge.com/assets/logo.png",
-        "sameAs": [
-          "https://www.instagram.com/xenoxforge.studio/",
-          "https://web.facebook.com/xenoxforgecreativestudios/",
-          "https://twitter.com/xenoxforge",
-          "https://xenoxforge.com"
-        ]
-      }
-  </script>
   <style>
     .atom_12 {
       background-color: #D5FF8F;
@@ -490,6 +474,12 @@
     .atom_link:hover {
       text-decoration: underline;
       color: #D5FF8F;
+      cursor: pointer;
+    }
+
+    .atom_link_5 {
+
+      color: #D5FF8F !important;
       cursor: pointer;
     }
 
@@ -1054,9 +1044,13 @@
       height: 100%;
       position: fixed;
       top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       bottom: 0;
       background: black;
-      z-index: 99999;
+      z-index: 9999999;
     }
 
     .percentage {
@@ -1109,7 +1103,7 @@
     .loadbar {
       width: 0%;
       height: 100%;
-      background-color: #fff;
+      background-color: #C1FF5C;
       position: absolute;
       top: 0;
       left: 0;
@@ -1158,7 +1152,7 @@
       width: 80px;
     }
 
-    @keyframes slide {
+    @keyframes slide_2 {
       from {
         transform: translateX(0);
       }
@@ -1171,9 +1165,10 @@
     .logos {
       overflow: hidden;
       padding: 60px 0;
-      background: white;
+      background: #FF645C;
       white-space: nowrap;
-
+      width: 110%;
+      transform: translateX(-5%);
       position: sticky;
     }
 
@@ -1189,12 +1184,12 @@
 
     .logos:before {
       left: 0;
-      background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), #FF645C);
     }
 
     .logos:after {
       right: 0;
-      background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), #FF645C);
     }
 
     .logos:hover .logos-slide {
@@ -1203,7 +1198,7 @@
 
     .logos-slide {
       display: inline-block;
-      animation: 30s slide infinite linear;
+      animation: 15s slide_2 infinite linear;
     }
 
     .logos-slide img {
@@ -1213,7 +1208,7 @@
 
     @media screen and (max-width:700px) {
       .logos {
-        background: white;
+        background: #FF645C;
         padding: 30px 0;
       }
 
@@ -1298,7 +1293,7 @@
       transition: background-color 1s ease;
     } */
     .every_thing_black {
-      background-color: #fff;
+      background-color: #D5FF8F;
       width: 100%;
       z-index: 9999 !important;
       padding: 15px;
@@ -1307,9 +1302,9 @@
       text-align: center;
     }
 
-    .atom_4 img {
-      transform: rotate(3deg);
-    }
+    /* .atom_4 img {
+      transform: rotate(-3deg);
+    } */
 
     .shade {
       position: fixed;
@@ -1351,6 +1346,13 @@
       font-weight: 500;
     }
 
+    .atom_5 h1 {
+      font-family: var(--font);
+      color: var(--light);
+      font-size: var(--font-size);
+      width: 100%;
+    }
+
     .reel {
       position: fixed;
       bottom: 0;
@@ -1361,13 +1363,14 @@
       max-width: 90%;
       height: 4.5rem;
       border-radius: 100px;
-      background-color: rgba(255, 255, 255, 0.20);
+      background-color: #D5FF8F;
       backdrop-filter: blur(30px);
       z-index: 9999999 !important;
       margin: auto;
       display: flex;
       padding: 5px;
       font-size: 22px;
+
       align-items: center;
       justify-content: space-between;
     }
@@ -1375,9 +1378,9 @@
     .hello {
       width: 50%;
       height: 100%;
-      /* background-color: rgba(255, 255, 255, 0.05); */
+      background-color: black;
       backdrop-filter: blur(10px);
-      color: #fff;
+      color: #D5FF8F;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1386,13 +1389,17 @@
       border-radius: 100px;
     }
 
+    html {
+      overflow-x: hidden;
+    }
+
     .showreel {
       display: flex;
       align-items: center;
       width: 48%;
       font-weight: 600;
       justify-content: center;
-      color: #fff;
+      color: black;
     }
 
     .showreel:hover {
@@ -1403,7 +1410,7 @@
       justify-content: center;
       border-radius: 100px;
       cursor: pointer;
-      color: #fff;
+      color: black;
       background-color: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(10px);
     }
@@ -1422,7 +1429,7 @@
       bottom: 10px;
       overflow: hidden;
       width: 99%;
-      height: 86vh;
+      height: 85%;
       margin: 0 auto;
       z-index: 9999999;
       background-color: #C1FF5C;
@@ -1459,14 +1466,10 @@
       padding: 1rem;
     }
 
-    .reel_1 div:nth-child(2) img {
-      width: 30%;
-      height: auto;
 
-    }
 
-    .reel_1 div:nth-child(2) video {
-      width: 65%;
+    .reel_1 div img:nth-child(2) {
+      width: 100%;
       position: absolute;
       top: 0;
       object-fit: cover;
@@ -1484,10 +1487,15 @@
     .reel_2>div {
       height: 100%;
       width: 100%;
-      padding: 10%;
       background-color: #C1FF5C;
     }
 
+    .padding-init{
+      padding-top:10%;
+      padding-left:10%;
+      padding-right: 10%;
+      padding-bottom:0%;
+    }
     .reel_2>div h1 {
       font-size: 3rem;
       margin-bottom: 10px;
@@ -1495,7 +1503,10 @@
 
     .reel_2>div img {
       width: 100%;
-      height: auto;
+      position:absolute;
+      object-fit: cover;
+      bottom:0;
+      height: 60%;
     }
 
     .reel_item_1 {
@@ -1509,7 +1520,7 @@
       left: 0;
       right: 0;
       border-radius: 50px;
-      background-color: rgba(255, 255, 255, 0.50);
+      background-color: #fff;
       backdrop-filter: blur(30px);
       height: 5rem;
       margin: 0 auto;
@@ -1518,7 +1529,7 @@
       justify-content: center;
       font-size: 20px;
       font-weight: 600;
-      color: #fff;
+      color: black;
       cursor: pointer;
     }
 
@@ -1527,23 +1538,24 @@
         font-size: 2rem;
       }
 
-      .reel_2>div img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 0%;
-      }
+   
     }
 
     @media screen and (max-width:700px) {
       .reel_2>div h1 {
         font-size: 2rem;
       }
+      .reel_item{
+        width: 100%;
+      }
 
       .reel_2>div img {
-        width: 100%;
-        height: 100%;
-      }
+      width: 100%;
+      position:absolute;
+      object-fit: cover;
+      bottom:0;
+      height: 64%;
+    }
 
       .reel_item {
         flex-direction: column;
@@ -1559,12 +1571,19 @@
 
       .reel_2 {
         width: 100%;
-        min-height: 100%;
+        min-height: 500px;
+        max-height: 500px !important;
       }
 
       .reel_2>div {
         height: 100% !important;
-        padding: 5%;
+      }
+
+      .padding-init{
+        padding-top:5%;
+      padding-left:5%;
+      padding-right: 5%;
+      padding-bottom:5%;
       }
 
       .reel_1 div:nth-child(1) {
@@ -1585,13 +1604,7 @@
         padding: 1rem;
       }
 
-      .reel_2>div img {
-        width: 100%;
-        height: 90%;
-        align-self: baseline;
-        object-fit: cover;
-        object-position: 0%;
-      }
+  
     }
 
     .fade {
@@ -1625,6 +1638,107 @@
     * {
       cursor: none !important;
     }
+
+    .thunder-intro {
+      font-family: Thunder;
+      font-size: var(--huge-font);
+      font-weight: bolder;
+      font-size: 120px !important;
+      transform: rotate(5deg);
+      color: #C1FF5C;
+    }
+
+    .intro_ {
+      color: #C1FF5C;
+    }
+
+    .slider {
+      width: 100%;
+      max-width: 100vw;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(50% * 24);
+      /* Total width = 50% * number of images (double for smooth looping) */
+      animation: slide 60s linear infinite;
+    }
+
+    .slider-track_2 {
+      display: flex;
+      width: calc(50% * 9);
+      /* Total width = 50% * number of images (double for smooth looping) */
+      animation: slide 15s linear infinite;
+    }
+
+    .slide {
+      flex: 0 0 auto;
+    }
+
+    .atom_img {
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* .slider:hover .slider-track {
+    animation-play-state: paused;
+} */
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      .slider-track {
+        display: flex;
+        width: calc(50% * 24);
+        /* Total width = 50% * number of images (double for smooth looping) */
+        animation: slide 30s linear infinite;
+      }
+
+      .slider-track_2 {
+        display: flex;
+        width: calc(50% * 9);
+        /* Total width = 50% * number of images (double for smooth looping) */
+        animation: slide 7.5s linear infinite;
+      }
+
+      .slide {
+        width: 50%;
+        max-width: 300px;
+        height: 250px;
+      }
+
+      .atom_img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+      .slide {
+        width: 50%;
+        max-width: 600px;
+        height: 600px;
+      }
+
+      .atom_img {
+        width: 100%;
+        height: 600px;
+      }
+    }
   </style>
 </head>
 
@@ -1636,54 +1750,131 @@
   <div class="every_thing_black">
     <a target="_blank" href="mailto:studio@xenoxforge.com"><span>Building global brands that stand out.</span></a>
   </div>
-  <!-- <div class="preloader-wrap">
-    <div style="display: none;" class="percentage" id="precent"></div>
-    <div class="loader">
+  <div class="preloader-wrap">
+    <h1 class="thunder-intro">2024</h1>
+
+
+    <svg x="0.0000mm" y="0.0000mm" width="76.2000mm" height="26.4580mm" viewBox="0.0000 0.0000 76.2000 26.4580"
+      version="1.1" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+      <title>TBarCode - 11.17.1.16949</title>
+      <desc>BarCode licensed to MEM:TEC-IT Datenverarbeitung GmbH Internal License</desc>
+      <g fill="#C1FF5C">
+      </g>
+      <g>
+        <rect x="0.0000" y="0.0000" width="76.2000" height="26.4580" />
+      </g>
+      <g fill="#C1FF5C">
+      </g>
+      <g fill="#C1FF5C">
+        <rect x="0.0000" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="0.7937" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="1.5875" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="2.9104" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="4.2333" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="4.7625" y="0.0000" width="0.7938" height="23.3222" />
+        <rect x="5.8208" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="6.6146" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="8.2021" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="8.7312" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="9.5250" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="10.8479" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="11.6417" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="12.4354" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="13.7583" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="14.5521" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="15.0812" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="15.8750" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="17.4625" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="17.9917" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="19.5792" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="20.3729" y="0.0000" width="0.7937" height="23.3222" />
+        <rect x="21.6958" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="22.4896" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="23.2833" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="23.8125" y="0.0000" width="0.7937" height="23.3222" />
+        <rect x="25.1354" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="26.1937" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="26.7229" y="0.0000" width="0.7937" height="23.3222" />
+        <rect x="28.0458" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="29.1042" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="30.6917" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="31.4854" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="32.0146" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="32.5437" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="33.6021" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="34.9250" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="36.5125" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="37.0417" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="37.8354" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="38.8937" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="40.2167" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="40.7458" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="42.3333" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="43.1271" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="43.6562" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="44.1854" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="45.7729" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="46.5667" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="47.6250" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="48.9479" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="49.4771" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="50.2708" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="51.0646" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="52.3875" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="53.1812" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="53.9750" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="55.2979" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="55.8271" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="56.8854" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="58.2083" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="59.0021" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="60.0604" y="0.0000" width="0.7938" height="23.3222" />
+        <rect x="61.1188" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="62.4417" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="62.9708" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="64.0292" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="65.0875" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="66.4104" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="66.9396" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="68.2625" y="0.0000" width="0.7938" height="23.3222" />
+        <rect x="69.3208" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="69.8500" y="0.0000" width="0.7938" height="23.3222" />
+        <rect x="70.9083" y="0.0000" width="1.0583" height="23.3222" />
+        <rect x="72.2313" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="72.7604" y="0.0000" width="0.5292" height="23.3222" />
+        <rect x="74.0833" y="0.0000" width="0.7938" height="23.3222" />
+        <rect x="75.1417" y="0.0000" width="0.2646" height="23.3222" />
+        <rect x="75.6708" y="0.0000" width="0.5292" height="23.3222" />
+      </g>
+      <g fill="rgb(0%,0%,0%)">
+        <text x="38.1000" y="25.8700" transform="rotate(360 38.1000,25.8700)" text-anchor="middle" font-family="Arial"
+          font-size="2.8222">https://xenoxforge.com</text>
+      </g>
+    </svg>
+    <br>
+    <p class="intro_" style="display: flex;align-items: center;"><i style="margin-right:5px"
+        class="ri-copyright-line"></i> 2024
+      Xenoxforge Creative Studios.</p>
+    <!-- <div class="loader">
+    
       <div class="trackbar">
         <div class="loadbar"></div>
       </div>
       <div class="glow"></div>
-    </div>
-  </div> -->
-  <div class="reel_item fade">
-    <div class="reel_1">
-      <div>
-        <img src="assets/Well,hello!.svg" alt="">
-      </div>
-      <div class="reel_item_1">
-        <img src="assets/cq_logo.svg" alt="">
-        <video autoplay muted loop src="assets/forge_reel.mp4"></video>
-        <div class="check">
-          Recent project
-        </div>
-      </div>
-    </div>
-    <div class="reel_2">
-      <div style="position: relative;">
-        <h1>We are working on the next cool thing!</h1>
-        <p style="font-size: 18px;">The only way for freelancers, creatives and agencies to send smart questionnaires to
-          their prospects and clients.</p>
-        <br>
-        <img style="border-radius: 50px;" src="assets/cq.svg" alt="">
-        <a href="https://clientquestionnaire.com">
-          <div class="check">
-            clientquestionnaire.com
-          </div>
-        </a>
-      </div>
-
-    </div>
+    </div> -->
   </div>
+
   <div class="reel">
-    <div class="hello">Say Hello</div>
-    <div class="showreel"><a target="_blank" href="https://medium.com/@xenoxforge/holla-928989ffde4b">Our blog</a></div>
+    <div class="hello">Spotlight</div>
+    <div class="showreel"> <a href="tel:+2349023860873">Phone us</a></div>
   </div>
   <script>
     $(".hello").click(function () {
-      $(".reel_item").toggleClass("fade")
+      $(".reel_item").toggleClass("fade");
     })
   </script>
-  <a target="_blank" href="mailto:studio@xenoxforge.com">
+  <a target="_blank"
+    href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">
     <div class='desmond' id="desmond">
       TWO OPEN SLOTS <span class="pointer" style="font-size: 2rem;margin-left:10px">👀</span>
     </div>
@@ -1693,53 +1884,42 @@
       <img class="mk" style="width:60px !important;height:auto" src="assets/logo_ideal.png" alt="">
     </div>
     <div class="atom_2 " style="padding:10px">
-      <div class="animate__animated animate__fadeIn animate__delay-1s cos">THE CREATORS OS</div>
-
-      <div class="atom_link up"> <a target="_blank" href="mailto:studio@xenoxforge.com">STUDIO : KICKSTART</a></div>
-
+      <a href="tel:+2349023860873">
+        <div class="up atom_link animate__animated animate__fadeIn animate__delay-1s cos">+234 902 386 0873</div>
+      </a>
+      <div class="atom_link up"> <a target="_blank"
+          href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">STUDIO
+          : KICKSTART</a></div>
     </div>
   </header>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      window.addEventListener("scroll", function () {
-        var navbar = document.getElementById("navbar");
-        var desmond = document.getElementById("desmond");
-
-        if (window.scrollY > window.innerHeight * 0.2) {
-          navbar.classList.add("bo");
-          desmond.classList.add("po");
-        } else {
-          navbar.classList.remove("bo");
-          desmond.classList.remove("po");
-        }
-      });
-    });
-
-  </script>
-  <div class="atom_3 container">
-    <div class="atom_4 up">
-      <img class="animate__animated animate__fadeIn" meta name="robots" content="noindex" src="assets/Group 11.png"
-        alt="">
+  <main class="atom_3 container">
+    <div class="atom_4 up" id="atom_scroll">
+      <img class="animate__animated animate__fadeIn" meta name="robots" content="noindex"
+        src="assets/forge_brand_builders.png" alt="">
     </div>
     <div class="atom_5 animate__animated animate__fadeIn up">
-      <p class="lean"><span style="font-weight: 400 !important;">Started by Eaelll Leon Faust, we are a leading software
+      <h1 class="lean"><span style="font-weight: 400 !important;">Started by <a href="https://linkedin.com/in/kenneth-okpala-alias-eaelll-leon-faust-302741256"
+            class="atom_link atom_link_5">Eaelll Leon Faust</a>, we are a leading software
           development, design & creative
           agency, working with
           founders
-          & businesses across the world build genius brand experiences.</p>
+          & businesses across the world build genius brand experiences.</h1>
       <p class="bnm"> <span class="atom_9">STARTUPS .
           BUSINESSES . INDIVIDUALS</span></p>
-      <div id="atom_scroll" class="atom_discover" style="font-weight: 900;">
-        SHOW ME
-      </div>
+      <a style="width: 100%;" target="_blank"
+        href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">
+        <div class="atom_discover" style="font-weight: 900;">
+          BOOK THE STUDIO
+        </div>
+      </a>
     </div>
-  </div>
+  </main>
 
   <div class="atom_6 container">
     <p>Building apps, websites and content experiences that actually <br> work for <span class="atom_9">STARTUPS .
         BUSINESSES . INDIVIDUALS</span></p>
   </div>
-  <div class="logos">
+  <div class="logos up" style="rotate: 3deg;">
     <div class="logos-slide">
       <img src="assets/offers/Wireframes.svg" />
       <img src="assets/offers/Design systems.svg" />
@@ -1748,7 +1928,6 @@
       <img src="assets/offers/SAAS.svg" />
       <img src="assets/offers/Email design.svg" />
     </div>
-
     <div class="logos-slide">
       <img src="assets/offers/Wireframes.svg" />
       <img src="assets/offers/Design systems.svg" />
@@ -1759,17 +1938,39 @@
     </div>
   </div>
   <div class="container"></div>
-  <div class="atom_8 up" id="atom_init">
-    <div>
-      <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/port_1.png" alt="">
+  <div class="slider up">
+    <div class="slider-track_2">
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img " src="assets/port_1.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img" src="assets/port_3.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img " src="assets/atom_4.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img " src="assets/port_1.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img" src="assets/port_3.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img " src="assets/atom_4.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img " src="assets/port_1.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img" src="assets/port_3.png" alt="">
+      </div>
+      <div class="atom_8 st1 up slide">
+        <img class="atom_img " src="assets/atom_4.png" alt="">
+      </div>
     </div>
-    <div>
-      <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/port_3.png" alt="">
-    </div>
-    <div>
-      <img class="atom_img lazy-load" src="assets/Group 49.png" data-src="assets/atom_4.png" alt="">
-    </div>
+
   </div>
+
   <div class="container atom_row">
     <div class="atom_10">
       <h1>LEADING WITH
@@ -1806,7 +2007,6 @@
       <img src="assets/hash.svg" alt="">
     </div>
   </div>
-
   <div class="atom_12">
     <div class="cloud">
       <img src="assets/cloud.svg" alt="">
@@ -1821,6 +2021,7 @@
           <p>Wireframes</p>
           <p>SAAS</p>
           <p>Design systems</p>
+          <p>Book cover design (New!)</p>
           <p>Illustrations</p>
           <p>Motion graphics</p>
         </div>
@@ -1833,7 +2034,8 @@
             <div class="atom_text">
               Pay per project
             </div>
-            <a target="_blank" href="mailto:studio@xenoxforge.com">
+            <a target="_blank"
+              href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">
               <div class="atom_button">Start project</div>
             </a>
           </div>
@@ -1856,7 +2058,8 @@
             <div class="atom_text">
               Send us a message
             </div>
-            <a target="_blank" href="mailto:xenoxforge@gmail.com">
+            <a target="_blank"
+              href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">
               <div class="atom_button">Message</div>
             </a>
           </div>
@@ -1936,37 +2139,89 @@
         <img class="atom_float" src="assets/cloud_6.svg" alt="">
       </div>
     </div>
-    <div class="atom_8 st1 up">
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/port_2.png" alt="">
-      </div>
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_5.png" alt="">
-      </div>
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 49.png" data-src="assets/atom_4.png" alt="">
-      </div>
-    </div>
-    <div class="atom_8 st1 up">
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/port_3.png" alt="">
-      </div>
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_7.png" alt="">
-      </div>
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/port_4.png" alt="">
-      </div>
-    </div>
-    <div class="atom_8 st1 up">
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 47.png" data-src="assets/atom_8.png" alt="">
-      </div>
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_11.png" alt="">
-      </div>
-      <div>
-        <img class="atom_img lazy-load" src="assets/Group 48.png" data-src="assets/atom_12.png" alt="">
+
+
+    <div class="slider up">
+      <div class="slider-track">
+        <!-- First set of images -->
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/cq_cq.svg" alt="Image 2">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/forge_mypurse (1).png" alt="Image 1">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_3.png" alt="Image 7">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/forge_mypurse (3).png" alt="Image 3">
+        </div>
+       
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_1.png" alt="Image 5">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_4.png" alt="Image 6">
+        </div>
+       
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_7.png" alt="Image 8">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_4.png" alt="Image 9">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_8.png" alt="Image 10">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_11.png" alt="Image 11">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_12.png" alt="Image 12">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_2.png" alt="Image 4">
+        </div>
+
+        <!-- Duplicate set of images for smooth transition -->
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/cq_cq.svg" alt="Image 2">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/forge_mypurse (1).png" alt="Image 1">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_3.png" alt="Image 7">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/forge_mypurse (3).png" alt="Image 3">
+        </div>
+      
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_1.png" alt="Image 5">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_4.png" alt="Image 6">
+        </div>
+      
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_7.png" alt="Image 8">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_4.png" alt="Image 9">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_8.png" alt="Image 10">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_11.png" alt="Image 11">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/atom_12.png" alt="Image 12">
+        </div>
+        <div class="atom_8 st1 up slide">
+          <img class="atom_img" src="assets/port_2.png" alt="Image 4">
+        </div>
       </div>
     </div>
     <div class="atom_24 up">
@@ -2012,7 +2267,8 @@
         <div class="atom_text">
           Pay per project
         </div>
-        <a target="_blank" href="mailto:studio@xenoxforge.com">
+        <a target="_blank"
+          href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">
           <div class="atom_button">Start project</div>
         </a>
       </div>
@@ -2036,7 +2292,8 @@
         <div class="atom_text">
           Send us a message
         </div>
-        <a target="_blank" href="mailto:xenoxforge@gmail.com">
+        <a target="_blank"
+          href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">
           <div class="atom_button">Message</div>
         </a>
       </div>
@@ -2073,7 +2330,7 @@
   <div class="container" style="justify-content:center;display: flex;">
     <div class="founders_note up">
       <div>
-        <img style="margin-right:10px;float:left" src="assets/WhatsApp Image 2024-01-10 at 7.49.14 PM.jpeg" alt="">
+        <img style="margin-right:10px;float:left" src="assets/faust.jpg" alt="">
         <div>
           <p>Building an iconic brand is hard. We build all approachable in hard.
             <br>
@@ -2123,8 +2380,59 @@
       <p>We revise your project until you are satisfied with it. Nothing less.</p>
     </div>
   </div>
-  <div class="container up">
+  <div class="logos up" style="rotate: 2deg;">
+    <div class="logos-slide">
+      <img src="assets/offers/Wireframes.svg" />
+      <img src="assets/offers/Design systems.svg" />
+      <img src="assets/offers/Websites.svg" />
+      <img src="assets/offers/APP DEVELOPMENT.svg" />
+      <img src="assets/offers/SAAS.svg" />
+      <img src="assets/offers/Email design.svg" />
+    </div>
+    <div class="logos-slide">
+      <img src="assets/offers/Wireframes.svg" />
+      <img src="assets/offers/Design systems.svg" />
+      <img src="assets/offers/Websites.svg" />
+      <img src="assets/offers/APP DEVELOPMENT.svg" />
+      <img src="assets/offers/SAAS.svg" />
+      <img src="assets/offers/Email design.svg" />
+    </div>
+  </div>
+  <!-- <div class="container up">
     <a href="mailto:studio@xenoxforge.com"><img style="width: 100%;height: auto;" src="assets/take_slot.png" alt=""></a>
+  </div> -->
+  <div class="reel_item fade">
+    <div class="reel_1">
+      <div>
+        <img src="assets/Well,hello!.svg" alt="">
+      </div>
+      <div class="reel_item_1">
+        <img style="display: none;" src="assets/mypurse_logo.png" alt="">
+        <img src="assets/mypurseshot_new.svg" alt="">
+        <div class="check"><a href="https://mypurseinc.com">
+            coming soon
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="reel_2">
+      <div style="position: relative;">
+        <div class="padding-init">
+          <h1>We built a free SAAS product</h1>
+          <p style="font-size: 18px;">Client questionnaire provides you an easier way of gathering project requirements.
+          </p>
+        </div>
+      
+        <br>
+        <img  src="assets/cq_cq.svg" alt="">
+        <a href="https://clientquestionnaire.com">
+          <div class="check">
+            clientquestionnaire.com
+          </div>
+        </a>
+      </div>
+
+    </div>
   </div>
   <footer class="container">
     <div class="atom_27">
@@ -2159,13 +2467,20 @@
       </div>
       <br>
       <div class="st9 up">
-        <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right:10px;" target="_blank"
-            href="mailto:studio@xenoxforge.com">Studio@xenoxforge.com</a> <i class="ri-external-link-line"></i></p>
-        <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right:10px" target="_blank"
-            href="mailto:team@xenoxforge.com">Team@xenoxforge.com</a> <i class="ri-external-link-line"></i></p>
-        <p class="" style="display: flex;align-items: center;"><span style="color:#808080">Chat with Eaelll Faust at
-          </span> &nbsp; <a style="margin-right:10px;" target="_blank" class="atom_link"
-            href="mailto:faust@xenoxforge.com">faust@xenoxforge.com</a> <i class="ri-external-link-line"></i></p>
+        <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right: 10px;" target="_blank"
+            href="mailto:studio@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">Studio@xenoxforge.com</a>
+          <i class="ri-external-link-line"></i>
+        </p>
+        <p class="atom_link" style="display: flex;align-items: center;"><a style="margin-right: 10px;" target="_blank"
+            href="mailto:team@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">Team@xenoxforge.com</a>
+          <i class="ri-external-link-line"></i>
+        </p>
+        <p class="" style="display: flex;align-items: center;"><span style="color:#808080">Chat with Eaelll
+            at
+          </span> &nbsp; <a style="margin-right: 10px;" target="_blank"
+            href="mailto:faust@xenoxforge.com?subject=Project%20kickstart,%20Xenoxforge%20studios&body=Hello%20Xenoxforge%20studios,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you%20guys%20on%20my%20upcoming%20project...%0D%0A%0D%0AWhat%20are%20the%20next%20steps?">faust@xenoxforge.com</a>
+          <i class="ri-external-link-line"></i>
+        </p>
       </div>
     </div>
     <div class="atom_29">
@@ -2174,6 +2489,29 @@
   </footer>
 </body>
 <script src="assets/js/xenoxforge.js"></script>
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    setTimeout(function () {
+      $('.preloader-wrap').fadeOut(300);
+    }, time);
+
+    window.addEventListener("scroll", function () {
+      var navbar = document.getElementById("navbar");
+      var desmond = document.getElementById("desmond");
+
+      if (window.scrollY > window.innerHeight * 0.2) {
+        navbar.classList.add("bo");
+        desmond.classList.add("po");
+      } else {
+        navbar.classList.remove("bo");
+        desmond.classList.remove("po");
+      }
+    });
+  });
+
+</script>
 <script>
   console.clear();
 
