@@ -419,11 +419,11 @@
       color: var(--light);
       margin-bottom: 5rem;
     }
-
+/* 
     body {
       background: url("assets/layer_1.svg");
 
-    }
+    } */
 
     .atom_27,
     .atom_28 {
@@ -1293,13 +1293,14 @@
       transition: background-color 1s ease;
     } */
     .every_thing_black {
-      background-color: #D5FF8F;
+      background-color: #fff ;
       width: 100%;
       z-index: 9999 !important;
       padding: 15px;
       font-size: 18px;
       position: relative;
       text-align: center;
+      color: #000000;
     }
 
     /* .atom_4 img {
@@ -1739,6 +1740,28 @@
         height: 600px;
       }
     }
+    .experiences{
+      position: fixed;
+      left:0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -9;
+    }
+    .experiences video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+    .shad{
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.90);
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 
@@ -1748,7 +1771,7 @@
   </div>
   <div class="shade"></div>
   <div class="every_thing_black">
-    <a target="_blank" href="mailto:xenoxforge@gmail.com"><span>Building global brands that stand out.</span></a>
+    <a target="_blank" href="mailto:xenoxforge@gmail.com"><span style="font-weight: 500;">Building global brands that stand out.</span></a>
   </div>
   <div class="preloader-wrap">
     <p class="intro_" style="display: flex;align-items: center;"><i style="margin-right:5px"
@@ -1791,6 +1814,10 @@
           : KICKSTART</a></div>
     </div>
   </header>
+  <div class="experiences">
+    <div class="shad"></div>
+    <video muted loop  onloadstart="this.playbackRate = 0.5;" autoplay src="assets/videoplayback.mp4"></video>
+  </div>
   <main class="atom_3 container">
     <div class="atom_4 up" id="atom_scroll">
       <img class="animate__animated animate__fadeIn" meta name="robots" content="noindex"
