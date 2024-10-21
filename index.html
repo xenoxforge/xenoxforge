@@ -419,11 +419,11 @@
       color: var(--light);
       margin-bottom: 5rem;
     }
-/* 
+
     body {
       background: url("assets/layer_1.svg");
 
-    } */
+    }
 
     .atom_27,
     .atom_28 {
@@ -1745,6 +1745,7 @@
       left:0;
       top: 0;
       width: 100%;
+      display: none;
       height: 100vh;
       z-index: -9;
     }
@@ -1755,7 +1756,10 @@
       object-fit: cover;
 
     }
-    .shad{
+
+
+@media screen and (min-width:700px) {
+  .shad{
       position: absolute;
       left: 0;
       top: 0;
@@ -1769,7 +1773,19 @@ backdrop-filter: blur(20px);
 z-index: 9999 !important;
 position: relative;
 }
+.experiences{
+  display: block;
+}
 
+    body {
+      background:none !important;
+
+    }
+    .every_thing_black{
+      display: none;
+    }
+
+}
   </style>
 </head>
 
@@ -1778,9 +1794,9 @@ position: relative;
     <img style="width: 100%;height: auto;" src="assets/seth.svg" alt="">
   </div>
   <div class="shade"></div>
-  <!-- <div class="every_thing_black">
+  <div class="every_thing_black">
     <a target="_blank" href="mailto:xenoxforge@gmail.com"><span style="font-weight: 500;">Building global brands that stand out. </span></a>
-  </div> -->
+  </div>
   <div class="preloader-wrap">
     <p class="intro_" style="display: flex;align-items: center;"><i style="margin-right:5px"
         class="ri-copyright-line"></i> 2024
