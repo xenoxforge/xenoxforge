@@ -1612,15 +1612,15 @@
     .fade {
       display: none !important;
     }
-   html::-webkit-scrollbar {
+   /* html::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+
 html{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
     .circle {
       display: none;
     }
@@ -1736,7 +1736,7 @@ html{
       }
     }
 
-    /* Media query for larger screens */
+
     @media (min-width: 768px) {
       .slide {
         width: 50%;
@@ -1755,7 +1755,6 @@ html{
   top: 0;
   width: 100%;
   height: 100vh;
-  display: none;
   z-index: -9;
 }
 
@@ -1768,7 +1767,16 @@ html{
 }
 
 
-
+.textft{
+  position:absolute;
+  right: 5%;
+  top:20%;
+  color:#fff;
+  z-index: 999 !important;
+  opacity: 1;
+  transition: opacity 0.3s ease; 
+  display: none;
+}
 @media screen and (min-width:700px) {
   .shad{
       position: absolute;
@@ -1787,7 +1795,9 @@ backdrop-filter: blur(20px);
 .experiences{
   display: block;
 }
-
+.textft{
+display: block;
+}
     body {
       background:none !important;
 
@@ -1797,15 +1807,7 @@ backdrop-filter: blur(20px);
     }
 
 }
-.textft{
-  position:absolute;
-  right: 5%;
-  top:20%;
-  color:#fff;
-  z-index: 999 !important;
-  opacity: 1;
-  transition: opacity 0.3s ease; 
-}
+
 
   </style>
 </head>
@@ -1813,7 +1815,7 @@ backdrop-filter: blur(20px);
 <body>
   <div class="circle">
     <img style="width: 100%;height: auto;" src="assets/seth.svg" alt="">
-  </div>
+  </div>                                                                                      
   <div class="shade"></div>
   <div class="every_thing_black">
     <a target="_blank" href="mailto:xenoxforge@gmail.com"><span style="font-weight: 500;">Building global brands that stand out. </span></a>
