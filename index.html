@@ -420,10 +420,10 @@
       margin-bottom: 5rem;
     }
 
-    body {
+    /* body {
       background: url("assets/layer_1.svg");
 
-    }
+    } */
 
     .atom_27,
     .atom_28 {
@@ -1201,9 +1201,26 @@
       animation: 15s slide_2 infinite linear;
     }
 
+
+
     .logos-slide img {
       height: 50px;
       margin: 0 40px;
+    }
+   .bo {
+      border-radius: 100%;
+      width: 70px;
+      background-color: black;
+      backdrop-filter: blur(10px);
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: fixed;
+      top: 5px;
+      z-index: 999;
+      left: 10px;
     }
 
     @media screen and (max-width:700px) {
@@ -1236,22 +1253,7 @@
       overflow-x: hidden;
     }
 
-    .bo {
-      border-radius: 100%;
-      width: 70px;
-      background-color: black;
-      backdrop-filter: blur(10px);
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      position: fixed;
-      top: 5px;
-      z-index: 999;
-      left: 10px;
-    }
-
+ 
     .lk {
       display: flex;
       justify-content: flex-end;
@@ -1612,7 +1614,7 @@
     .fade {
       display: none !important;
     }
-   /* html::-webkit-scrollbar {
+   html::-webkit-scrollbar {
   display: none;
 }
 
@@ -1620,7 +1622,7 @@
 html{
   -ms-overflow-style: none;
   scrollbar-width: none;
-} */
+}
     .circle {
       display: none;
     }
@@ -1822,7 +1824,7 @@ display: block;
   </div>
   <div class="preloader-wrap">
     <!-- <p class="intro_" style="display: flex;align-items: center;"><i style="margin-right:5px"
-        class="ri-copyright-line"></i> 2024
+        class="ri-copyright-line"></i> 2025
       Xenoxforge Creative Studios.</p> -->
     <div class="loader">
     
@@ -2406,7 +2408,7 @@ display: block;
       <a class="up" href="who we are/">
         <p class="atom_link">WHO WE ARE</p>
       </a>
-      <p style="display: flex;align-items: center;"><i style="margin-right:5px" class="ri-copyright-line"></i> 2024
+      <p style="display: flex;align-items: center;"><i style="margin-right:5px" class="ri-copyright-line"></i> 2025
         Xenoxforge Creative Studios.</p>
       <p>All rights reserved.</p>
     </div>
@@ -2460,7 +2462,7 @@ window.addEventListener('scroll', () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const windowHeight = window.innerHeight;
 
-  let opacity = 1 - scrollTop / windowHeight;
+  let opacity = 1 - scrollTop / 100;
 
 
   if (opacity < 0) opacity = 0;
